@@ -1657,12 +1657,12 @@
         }, 
         {
             "location": "/PluginInstall/", 
-            "text": "How to install a plugin\n\n\nProcedure:\n  1. First download the plugin from the \nbots sourceforge site\n to your file system.\n  1. Go to \nbots-monitor-Systasks-\nRead plugin\n\n  1. Select the plugin from your system.\n  1. After selecting choose 'Read'.\n\n\nBots will now report that is has read the plugin.\n\n\nNote 1: in order to run the routes in a plugin you first have to activate the routes.\n\n\nNote 2: grammars for edifact and x12 are NOT plugins, and can not be installed.", 
+            "text": "How to install a plugin\n\n\nProcedure:\n\n\n\n\nFirst download the plugin from the \nbots sourceforge site\n to your file system.\n\n\nGo to \nbots-monitor-Systasks-\nRead plugin\n\n\nSelect the plugin from your system.\n\n\nAfter selecting choose 'Read'.\n\n\n\n\nBots will now report that is has read the plugin.\n\n\nNote 1: in order to run the routes in a plugin you first have to activate the routes.\n\n\nNote 2: grammars for edifact and x12 are NOT plugins, and can not be installed.", 
             "title": "Install a plugin"
         }, 
         {
             "location": "/PluginInstall/#how-to-install-a-plugin", 
-            "text": "Procedure:\n  1. First download the plugin from the  bots sourceforge site  to your file system.\n  1. Go to  bots-monitor-Systasks- Read plugin \n  1. Select the plugin from your system.\n  1. After selecting choose 'Read'.  Bots will now report that is has read the plugin.  Note 1: in order to run the routes in a plugin you first have to activate the routes.  Note 2: grammars for edifact and x12 are NOT plugins, and can not be installed.", 
+            "text": "Procedure:   First download the plugin from the  bots sourceforge site  to your file system.  Go to  bots-monitor-Systasks- Read plugin  Select the plugin from your system.  After selecting choose 'Read'.   Bots will now report that is has read the plugin.  Note 1: in order to run the routes in a plugin you first have to activate the routes.  Note 2: grammars for edifact and x12 are NOT plugins, and can not be installed.", 
             "title": "How to install a plugin"
         }, 
         {
