@@ -1682,12 +1682,12 @@
         }, 
         {
             "location": "/PluginGenerate/", 
-            "text": "Make a plugin\n\n\nIt is very easy to generate a plugin from your own configuration:\n  1. Go to \nbots-monitor-\nSystasks-\nMake plugin\n\n  1. select what your want in the plugin (defaults are for a configuration plugin)\n  1. push button 'Make plugin'\n  1. give filename/path to save the plugin.", 
+            "text": "Make a plugin\n\n\nIt is very easy to generate a plugin from your own configuration:\n\n\n\n\nGo to \nbots-monitor-\nSystasks-\nMake plugin\n\n\nselect what your want in the plugin (defaults are for a configuration plugin)\n\n\npush button 'Make plugin'\n\n\ngive filename/path to save the plugin.", 
             "title": "Make a plugin"
         }, 
         {
             "location": "/PluginGenerate/#make-a-plugin", 
-            "text": "It is very easy to generate a plugin from your own configuration:\n  1. Go to  bots-monitor- Systasks- Make plugin \n  1. select what your want in the plugin (defaults are for a configuration plugin)\n  1. push button 'Make plugin'\n  1. give filename/path to save the plugin.", 
+            "text": "It is very easy to generate a plugin from your own configuration:   Go to  bots-monitor- Systasks- Make plugin  select what your want in the plugin (defaults are for a configuration plugin)  push button 'Make plugin'  give filename/path to save the plugin.", 
             "title": "Make a plugin"
         }, 
         {
