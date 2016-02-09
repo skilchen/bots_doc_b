@@ -2002,12 +2002,12 @@
         }, 
         {
             "location": "/DeploymentAdvanced/", 
-            "text": "Advanced Deployment\n\n\nTopics:\n  1. If more users have access to bots-monitor, use \nlimited rights for users\n.\n  1. If you use bots-monitor over the internet/outside your LAN, use \nHTTPS/SSL connection\n.\n  1. Use \nMySQL or PostgreSQL as the Bots database\n.\n  1. Use \nAS2 as a communication method\n.\n  1. Bots has \noptions to push changes from test to production\n.\n  1. Information about \nperformance\n.", 
+            "text": "Advanced Deployment\n\n\nTopics:\n\n\n\n\nIf more users have access to bots-monitor, use \nlimited rights for users\n.\n\n\nIf you use bots-monitor over the internet/outside your LAN, use \nHTTPS/SSL connection\n.\n\n\nUse \nMySQL or PostgreSQL as the Bots database\n.\n\n\nUse \nAS2 as a communication method\n.\n\n\nBots has \noptions to push changes from test to production\n.\n\n\nInformation about \nperformance\n.", 
             "title": "Advanced Deployment"
         }, 
         {
             "location": "/DeploymentAdvanced/#advanced-deployment", 
-            "text": "Topics:\n  1. If more users have access to bots-monitor, use  limited rights for users .\n  1. If you use bots-monitor over the internet/outside your LAN, use  HTTPS/SSL connection .\n  1. Use  MySQL or PostgreSQL as the Bots database .\n  1. Use  AS2 as a communication method .\n  1. Bots has  options to push changes from test to production .\n  1. Information about  performance .", 
+            "text": "Topics:   If more users have access to bots-monitor, use  limited rights for users .  If you use bots-monitor over the internet/outside your LAN, use  HTTPS/SSL connection .  Use  MySQL or PostgreSQL as the Bots database .  Use  AS2 as a communication method .  Bots has  options to push changes from test to production .  Information about  performance .", 
             "title": "Advanced Deployment"
         }, 
         {
