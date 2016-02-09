@@ -1,6 +1,7 @@
 # How to install a plugin #
 
 Procedure:
+
   1. First download the plugin from the [bots sourceforge site](http://sourceforge.net/projects/bots/files/plugins/) to your file system.
   1. Go to _bots-monitor-Systasks->Read plugin_
   1. Select the plugin from your system.
