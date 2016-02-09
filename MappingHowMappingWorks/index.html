@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>How mapping works - Bots EDI Translator Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "How mapping works";
+    var mkdocs_page_input_path = "MappingHowMappingWorks.md";
+    var mkdocs_page_url = "/MappingHowMappingWorks/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Bots EDI Translator Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Get started with bots</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Installation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallProcedure/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallWindows/">Installation Windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstalllinux/">Installation Linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallFaq/">Installation FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallDependencies/">Dependencies</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartGetBotsRunning/">Get bots running</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Tutorial</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPlugin/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginResults/">View results</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginSetup/">Walk through setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginDepth/">What happened</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Guide for bots-monitor</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorRereceive/">How to rereceive</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configuration</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewConfiguration/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationHow/">How to do configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationDIY/">DIY step by step</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Route</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesComposite/">Composite routes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesPass/">PassThrough (no translation)</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Route scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesScripts/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsOverviewExits/">Overview Exit points</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExample/">Preprocessing recipes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleWholeRoute/">Take over whole route</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channel/communication</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Filenames/">Filenames</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsDatabase/">Database communication</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsScripting/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsExample/">Small user script</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsSubclass/">Subclassing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsType/">communication type 'communicationscript'</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelPortNumbers/">Channel port numbers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelFileLock/">Safe file writing/locking</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Translation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationDetail/">How translations work</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationRules/">What translation when?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationAlt/">Chained translations (alt)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationVersions/">Multiple versions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mapping Scripts</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">How mapping works</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#how-mapping-works">How mapping works</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-1">Example 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#mpath-query-the-edi-data">Mpath: query the edi data</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-2">Example 2</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingGet/">Get from message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPut/">Put in message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingFunction/">Div mapping functions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCcode/">Code conversion</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCalculate/">Calculate and count</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPersist/">Persist (store data)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingEAN/">EAN/UCC check digits</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingChangedelete/">Change and delete</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Grammars</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsHowToGet/">How to get grammars</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsSyntax/">Syntax parameters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsStructure/">Structure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsRecorddefs/">Recorddefs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessage/">Nextmessage</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessageblock/">Nextmessageblock</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationCharset/">Edifact charsets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../XMLnamespace/">XML namespaces</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationBotskey/">Document View (botskey)</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../UserScriptingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleBotsEngine/">Bots engine scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Confirmations/">Confirmations/acknowledgements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Split/merge/envelope</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplitMerge/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplit/">Split edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationMerge/">Merge/envelope edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Edi partners</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartners/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartnerGroup/">Partner groups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsRecipes/">Email addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Charsets/">Character-sets/unicode</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Debug/">How to debug</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Plugins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginInstall/">Install a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginList/">Plugins at sourceforge</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginGenerate/">Make a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginDetail/">Plugin details</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Deployment and usage</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineOverview/">Running bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngine/">Schedule bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Jobqueue/">Job Queue</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DirMonitor/">Directory Monitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineReturnCode/">Return codes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHandleErrors/">Handle production errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentErrorReports/">Email notification for errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Archiving/">Archiving of EDI files</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DaemonProcesses/">Run as service/daemon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../LinuxDaemons/">Linux Daemons</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../WindowsServices/">Windows Services</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Multiple environments</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironments/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironmentsVirtual/">Virtual environments</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAdvanced/">Advanced Deployment</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserSecurity/">User Rights</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHttps/">Bots-monitor over HTTPS</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentWebserver/">Use Apache2</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentOtherDatabase/">Use MySQL/PostgreSQL</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAS2/">Using AS2 with Bots</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEnv/">Configuration change management</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAcceptance/">Isolated acceptance test</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAutopush/">Push test->production</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentTestSet/">Build test-set</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Performance/">Performance/big volumes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Troubleshooting/">Troubleshooting FAQ</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BotsName/">The name "Bots"</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDetail/">Technical overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDirectoryLayout/">Directories and files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartConfigurationFiles/">Configuration files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Glossary/">Glossary of terms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Changes and migrate</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate320/">Bots 3.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V320changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate310/">Bots 3.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate300/">Bots 3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300rcchanges/">Changes 3.0.0rc/3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate220/">Changes/migrate 2.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate210/">Changes/migrate 2.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateKidGenshi/">Migrate Kid to Genshi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDjango/">Migrate Django versions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDatabase/">Migrate database</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialHome/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialEdiBasics/">EDI Basics</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../OdooIntegration/">Integration with Odoo/OpenERP</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../NewToPython/">New to python?</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Links/">External reference links</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UsefulTools/">Useful Tools</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Bots EDI Translator Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Mapping Scripts &raquo;</li>
+        
+      
+    
+    <li>How mapping works</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="how-mapping-works">How mapping works</h2>
+<h3 id="example-1">Example 1</h3>
+<pre><code class="python">#this mapping script maps an incoming edifact message to a fixed record file.
+#bots calls the 'main' function in this mapping script 
+def main(inn,out): 
+    #inn: the object for the incoming message; via get() and getloop() the content of the message can be accessed. 
+    #out: the object for the outgoing message; via put() and putloop() content is written for
+    this message. ordernumber = inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','1004':None}) #get the order-number. 
+                                                                                       #The order-number is in field '1004' of record BGM.
+                                                                                       #Record BGM is nested under record UNH.
+    out.put({'BOTSID':'HEA','ORDERNUMBER':ordernumber})                                #put the order-number in the outgoing fixed message, field 'ORDERNUMBER' in record HEA.
+
+    #We first did a get(), than a put(). This can be done in one line:
+    out.put({'BOTSID':'HEA','ORDERTYPE':inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','C002.1001':None})})
+
+    #There can be several dates, all in a DTM record.
+    #The 'qualifier' determines the type of date.
+    #Fetch the dates like this:
+    out.put({'BOTSID':'HEA','ORDERDATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'137','C507.2380':None})})     #get statement ONLY looks for DTM with qualifier 137
+    out.put({'BOTSID':'HEA','DELIVERY\_DATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'2','C507.2380':None})})
+    #please note: no looping over the DTM-records, just get the data! 
+
+    #The orderlines are in a LIN-recordgroup; so we want each line in its own fixed LIN-record. 
+    #start looping the lines (LIN-segments) in the incoming message: 
+    for lin in inn.getloop({'BOTSID':'UNH'},{'BOTSID':'LIN'}): 
+        #write a fixed LIN record: 
+        lou = out.putloop({'BOTSID':'HEA'},{'BOTSID':'LIN'}) 
+        #Note: in this loop get() is used on the lin-object, and put() is used for the lou-object!
+        lou.put({'BOTSID':'LIN','LINENUMBER':lin.get({'BOTSID':'LIN','1082':None})})
+        lou.put({'BOTSID':'LIN','ARTICLE\_GTIN':lin.get({'BOTSID':'LIN','C212.7140':None})})
+        lou.put({'BOTSID':'LIN','QUANTITY':lin.get({'BOTSID':'LIN'},{'BOTSID':'QTY','C186.6063':'21','C186.6060':None})})
+
+    #OK, we did the lines, but forgot to map the party's - the parties are before the lines in the incoming message. 
+    #No problem, get/put can be done anywhere in the mapping - we are NOT looping the incoming or outgoing message:
+
+    out.put({'BOTSID':'HEA','BUYER\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'BY','C082.3039':None})})
+    out.put({'BOTSID':'HEA','SUPPLIER\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'SU','C082.3039':None})})
+    out.put({'BOTSID':'HEA','DELIVERYPLACE\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C082.3039':None})})
+</code></pre>
+
+<h3 id="mpath-query-the-edi-data">Mpath: query the edi data</h3>
+<p>In the examples above the data in the edi messages is queried using eg
+<code>{'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'BY','C082.3039':None}</code>.<br />
+This 'thing' is called a mpath (just a name). Mpath is quite important
+in building a mapping.</p>
+<p>More about mpath:</p>
+<ul>
+<li>An mpath consists of one or more python 'dicts' (dictionaries),
+    separated by commas: <em>dict1,dict2, dict3</em></li>
+<li>'BOTSID' is the record identifier.</li>
+<li>in get(): 'None' indicates that the value of this field should be
+    returned. All others fields are interpreted as: if field==value.</li>
+<li>in put(): all name-values are written, but not if one of the values
+    is 'None'. If one of the values is None no values at all are written
+    to outgoing message. This is used in the combined
+    out.put(...inn.get(...)...)-statements.
+     Detailed information about get, getloop, put, putloop is
+    <a href="../MappingFunction/#Get:_retrieve_data_from_message">here</a></li>
+</ul>
+<p><strong>Never</strong> do this (use 2 inn.get's in one out.put):</p>
+<pre><code>out.put({'BOTSID':'ADD','7747':inn.get('BOTSID':'HEA','name1':None),'7749':inn.get('BOTSID':'HEA','name2':None)})}
+</code></pre>
+<p>Because: if either name1 or name2 is not there (empty, None) nothing
+will be written in this statement.</p>
+<h3 id="example-2">Example 2</h3>
+<pre><code class="python">def main(inn,out):
+    #The incoming message object (inn) has a dict 'ta_info'. 
+    #ta_info contains information from the QUERIES in the grammar;
+    #mostly  envelope data like sender, reciever etc.about the message as specified in the grammar (queries, SUBTRANSLATION). 
+    out.put({'BOTSID':'HEA','SENDER':inn.ta_info['frompartner']})
+
+    #The outgoing message object (out) also has a dict ta_info. 
+    #You can change it if required. eg. to set topartner:
+    BuyerID = inn.get({'BOTSID':'HEA','BUYER_ID':None})
+    inn.ta_info['topartner'] = BuyerID       #use BuyerID as topartner (when eveloping)
+
+    #Inn-get() either return a value, or 'None'. Look at the next line:
+    out.put({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'137','C507.2380':inn.get({'BOTSID':'HEA','ORDERDATE':None})})    
+    #if there is no ORDERDATE in the HEA record, put() receives a 'None'-value. 
+    #Nothing will be written to the outgoing message! 
+
+    #in the next lines 2 values from the inhouse record are written to the same record:
+    out.put({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C082.3055':'9','C082.3039':inn.get({'BOTSID':'HEA','DELIVERYPLACE_ID':None})})
+    out.put({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C058.3036':inn.get({'BOTSID':'HEA','DELIVERYPLACE_NAME':None})})
+    #both the deliveryplace_id and deliveryplace_name are written to a NAD-record with qualifier 'BY .
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../MappingGet/" class="btn btn-neutral float-right" title="Get from message">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../MappingIntroduction/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../MappingIntroduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../MappingGet/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

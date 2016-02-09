@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Character-sets/unicode - Bots EDI Translator Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Character-sets/unicode";
+    var mkdocs_page_input_path = "Charsets.md";
+    var mkdocs_page_url = "/Charsets/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Bots EDI Translator Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Get started with bots</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Installation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallProcedure/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallWindows/">Installation Windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstalllinux/">Installation Linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallFaq/">Installation FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallDependencies/">Dependencies</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartGetBotsRunning/">Get bots running</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Tutorial</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPlugin/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginResults/">View results</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginSetup/">Walk through setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginDepth/">What happened</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Guide for bots-monitor</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorRereceive/">How to rereceive</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configuration</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewConfiguration/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationHow/">How to do configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationDIY/">DIY step by step</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Route</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesComposite/">Composite routes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesPass/">PassThrough (no translation)</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Route scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesScripts/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsOverviewExits/">Overview Exit points</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExample/">Preprocessing recipes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleWholeRoute/">Take over whole route</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channel/communication</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Filenames/">Filenames</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsDatabase/">Database communication</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsScripting/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsExample/">Small user script</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsSubclass/">Subclassing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsType/">communication type 'communicationscript'</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelPortNumbers/">Channel port numbers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelFileLock/">Safe file writing/locking</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Translation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationDetail/">How translations work</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationRules/">What translation when?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationAlt/">Chained translations (alt)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationVersions/">Multiple versions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mapping Scripts</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingHowMappingWorks/">How mapping works</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingGet/">Get from message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPut/">Put in message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingFunction/">Div mapping functions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCcode/">Code conversion</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCalculate/">Calculate and count</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPersist/">Persist (store data)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingEAN/">EAN/UCC check digits</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingChangedelete/">Change and delete</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Grammars</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsHowToGet/">How to get grammars</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsSyntax/">Syntax parameters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsStructure/">Structure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsRecorddefs/">Recorddefs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessage/">Nextmessage</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessageblock/">Nextmessageblock</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationCharset/">Edifact charsets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../XMLnamespace/">XML namespaces</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationBotskey/">Document View (botskey)</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../UserScriptingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleBotsEngine/">Bots engine scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Confirmations/">Confirmations/acknowledgements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Split/merge/envelope</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplitMerge/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplit/">Split edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationMerge/">Merge/envelope edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Edi partners</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartners/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartnerGroup/">Partner groups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsRecipes/">Email addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Character-sets/unicode</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#characters-sets-encoding-and-unicode">Characters sets, encoding and unicode</a></li>
+                
+                    <li><a class="toctree-l4" href="#specifics-of-different-character-sets">Specifics of different character-sets</a></li>
+                
+                    <li><a class="toctree-l4" href="#x12-incoming">x12 incoming</a></li>
+                
+                    <li><a class="toctree-l4" href="#edifact-incoming">edifact incoming</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Debug/">How to debug</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Plugins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginInstall/">Install a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginList/">Plugins at sourceforge</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginGenerate/">Make a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginDetail/">Plugin details</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Deployment and usage</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineOverview/">Running bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngine/">Schedule bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Jobqueue/">Job Queue</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DirMonitor/">Directory Monitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineReturnCode/">Return codes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHandleErrors/">Handle production errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentErrorReports/">Email notification for errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Archiving/">Archiving of EDI files</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DaemonProcesses/">Run as service/daemon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../LinuxDaemons/">Linux Daemons</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../WindowsServices/">Windows Services</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Multiple environments</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironments/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironmentsVirtual/">Virtual environments</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAdvanced/">Advanced Deployment</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserSecurity/">User Rights</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHttps/">Bots-monitor over HTTPS</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentWebserver/">Use Apache2</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentOtherDatabase/">Use MySQL/PostgreSQL</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAS2/">Using AS2 with Bots</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEnv/">Configuration change management</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAcceptance/">Isolated acceptance test</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAutopush/">Push test->production</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentTestSet/">Build test-set</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Performance/">Performance/big volumes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Troubleshooting/">Troubleshooting FAQ</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BotsName/">The name "Bots"</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDetail/">Technical overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDirectoryLayout/">Directories and files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartConfigurationFiles/">Configuration files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Glossary/">Glossary of terms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Changes and migrate</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate320/">Bots 3.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V320changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate310/">Bots 3.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate300/">Bots 3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300rcchanges/">Changes 3.0.0rc/3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate220/">Changes/migrate 2.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate210/">Changes/migrate 2.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateKidGenshi/">Migrate Kid to Genshi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDjango/">Migrate Django versions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDatabase/">Migrate database</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialHome/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialEdiBasics/">EDI Basics</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../OdooIntegration/">Integration with Odoo/OpenERP</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../NewToPython/">New to python?</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Links/">External reference links</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UsefulTools/">Useful Tools</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Bots EDI Translator Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Character-sets/unicode</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="characters-sets-encoding-and-unicode">Characters sets, encoding and unicode</h2>
+<p>The good news: in
+general Bots handles character sets well.<br />
+Incoming files are read using the character-set specified in the
+'incoming' syntax, outgoing files are written using the character-set as
+specified in the 'outgoing' syntax. You do not need to do anything in
+the mapping, Bots does the character-set conversion automatically.</p>
+<p>Notes:</p>
+<ul>
+<li>Lots of information about this topic can be found on
+    <a href="http://en.wikipedia.org/wiki/Character_encoding">wikipedia</a>.</li>
+<li>Information about the different character-sets in python is <a href="http://docs.python.org/2/library/codecs.html#standard-encodings">at 
+    python
+    site</a>.</li>
+<li>Outgoing character sets can be set in syntax; this can be done on
+    envelope level, messagetype level of per partner.</li>
+<li>Sometimes character-set conversion is not possible, eg
+    uft-8->ascii, as uft8 can contain characters not in utf8.</li>
+<li>For edifact there is an option to do character-set mapping (eg
+    é->e); this is also possible for x12 (bit more work).</li>
+<li>Note that x12 can be tricky: the separators used can not be in the
+    data. There is no good workaround for this, best way is to change
+    the separators used.</li>
+</ul>
+<h3 id="specifics-of-different-character-sets">Specifics of different character-sets</h3>
+<ul>
+<li>Most used in edi is ascii, iso-8859-1, uft-8 (xml!).</li>
+<li>Most familiar is ascii. Note that ascii has only 128 characters! One
+    character is one byte.</li>
+<li>The extended asccii character-sets.<ul>
+<li>One character is always one byte.</li>
+<li>The upper 128 (above ascii) are used as special characters (eg
+    éëè).</li>
+<li>These  different character-sets are about displaying (on screen,
+    print etc). If the texts is in iso-8859-1, but displayed as eg
+    IBM850 is looks 'wrong'. Note that the content is still the
+    same, it's only the display that is different.</li>
+<li>In general these extended ascii character-sets will not be
+    problematic in translations, as segment ID's/tags are in ascii
+    and one character is one byte. In Bots the content of the
+    message will just be fetched and passed to the outgoing message.
+    So if a iso-8859-3 is handled as iso-8859-1 that will generally
+    not be problematic.</li>
+<li>Examples: iso-8859-1, windows-1252, iso-8859-2, iso-8859-3,
+    IBM850, UNOC, latin1.</li>
+</ul>
+</li>
+<li>Unicode.<ul>
+<li>Examples: utf-8, utf-16, utf-32, UCS-2</li>
+<li>Unicode is designed at accommodate much more characters, think
+    of eg Greek, Japanese, Chinese and Klingon characters.</li>
+<li>One character is not one byte. (the different Unicode
+    characters-sets use different representation schemes.</li>
+<li>Much used is utf-8. Advantage of utf-8 is that the first 128
+    ascii characters are one byte; this is way uft-8 is 'upward
+    compatible' with ascii: a file with only ascii characters is the
+    same in ascii and uft-8.</li>
+<li>In Microsoft environments often utf-16 and utf-32 is used.</li>
+<li>Fixed files can not have utf-8 character-set, as one character
+    might be more than one byte.</li>
+</ul>
+</li>
+<li>EBCDIC :related to (extended) ascii: one character is one byte.
+    There are some variations of EBCDIC (eg extended EBCDIC).</li>
+</ul>
+<p>A nasty situation is eg when one partner sends Unicode (eg utf-8), and
+another sends extended ascii (eg iso-8859-1). These extended characters
+work quite differently: Bots has to know what character-set is used
+before reading them, as these character-sets are treated quite
+differently. Best way to solve this is to have receive these files via
+different route(parts). Bots does no 'guessing of character-sets', as
+this is not appropriate for business data.</p>
+<h3 id="x12-incoming">x12 incoming</h3>
+<p>Character set as in envelope is used (if not set here default value of
+grammar.py is used (ascii)).</p>
+<p>Some typical issues and solutions:</p>
+<ul>
+<li>if partner sends x12 as eg iso-8859-1, just specify this in the
+    syntax of the envelope (<em>usersys/grammars/x12/x12.py</em>). Note that
+    this is a system-wide setting, this will be used for all incoming<ol>
+<li>Should not be a problem, iso-8859-1 is a superset of ascii. The
+character-set of outgoing files should also be set to handle the
+extended characters. Also check your ERP software: what can it
+handle?</li>
+</ol>
+</li>
+<li>same solution works for utf-8</li>
+</ul>
+<h3 id="edifact-incoming">edifact incoming</h3>
+<p>Edifact has its own character-sets: UNOA, UNOB, UNOC, etc.<br />
+In default bots setup:</p>
+<ul>
+<li>UNOA and UNOB have own character-set mapping in <em>usersys/charsets</em>.</li>
+<li>other edifact character-sets are aliased in <em>config/bots.ini</em>,
+    section charsets.</li>
+<li>default UNOA and UNOB are not 100% strict but allow some extra
+    characters like .</li>
+<li>there are some variations of default UNOA/UNOB in <a href="http://http://sourceforge.net/projects/bots/files/edifact%20character%20sets/">sourceforge
+    downloads</a>.</li>
+</ul>
+<p>Some typical issues and solutions:</p>
+<ul>
+<li>
+<p>edifact files have 'UNOA' in them, but in fact they send more (UNOC).
+    Solution: use 'unoa_like_unoc.py' from downloads, save in
+    <em>usersys/charsets</em> and rename to unoa.py</p>
+</li>
+<li>
+<p>partner sends UNOC character-set, but my system can only handle ascii.
+    Solution: use 'unoa_like_unoc.py' from downloads; if you open this
+    file you can see a character mapping (note that incoming is a different
+    character mapping as outgoing). You can map eg incoming é->e (etcetc)</p>
+</li>
+<li>
+<p>our system uses iso-8859-1, but partner can handle only UNOB. Solution:
+    use 'unoa_like_unoc.py' from downloads; if you open this file you can
+    see a character mapping (note that incoming is a different character
+    mapping as outgoing). You can map eg outgoing é->e (etc etc)</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Debug/" class="btn btn-neutral float-right" title="How to debug">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../EnvelopeScripting/" class="btn btn-neutral" title="Envelope scripting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../EnvelopeScripting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Debug/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

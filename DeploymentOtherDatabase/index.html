@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Use MySQL/PostgreSQL - Bots EDI Translator Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Use MySQL/PostgreSQL";
+    var mkdocs_page_input_path = "DeploymentOtherDatabase.md";
+    var mkdocs_page_url = "/DeploymentOtherDatabase/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Bots EDI Translator Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Get started with bots</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Installation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallProcedure/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallWindows/">Installation Windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstalllinux/">Installation Linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallFaq/">Installation FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallDependencies/">Dependencies</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartGetBotsRunning/">Get bots running</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Tutorial</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPlugin/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginResults/">View results</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginSetup/">Walk through setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginDepth/">What happened</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Guide for bots-monitor</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorRereceive/">How to rereceive</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configuration</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewConfiguration/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationHow/">How to do configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationDIY/">DIY step by step</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Route</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesComposite/">Composite routes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesPass/">PassThrough (no translation)</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Route scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesScripts/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsOverviewExits/">Overview Exit points</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExample/">Preprocessing recipes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleWholeRoute/">Take over whole route</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channel/communication</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Filenames/">Filenames</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsDatabase/">Database communication</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsScripting/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsExample/">Small user script</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsSubclass/">Subclassing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsType/">communication type 'communicationscript'</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelPortNumbers/">Channel port numbers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelFileLock/">Safe file writing/locking</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Translation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationDetail/">How translations work</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationRules/">What translation when?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationAlt/">Chained translations (alt)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationVersions/">Multiple versions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mapping Scripts</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingHowMappingWorks/">How mapping works</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingGet/">Get from message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPut/">Put in message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingFunction/">Div mapping functions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCcode/">Code conversion</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCalculate/">Calculate and count</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPersist/">Persist (store data)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingEAN/">EAN/UCC check digits</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingChangedelete/">Change and delete</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Grammars</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsHowToGet/">How to get grammars</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsSyntax/">Syntax parameters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsStructure/">Structure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsRecorddefs/">Recorddefs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessage/">Nextmessage</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessageblock/">Nextmessageblock</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationCharset/">Edifact charsets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../XMLnamespace/">XML namespaces</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationBotskey/">Document View (botskey)</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../UserScriptingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleBotsEngine/">Bots engine scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Confirmations/">Confirmations/acknowledgements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Split/merge/envelope</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplitMerge/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplit/">Split edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationMerge/">Merge/envelope edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Edi partners</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartners/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartnerGroup/">Partner groups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsRecipes/">Email addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Charsets/">Character-sets/unicode</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Debug/">How to debug</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Plugins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginInstall/">Install a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginList/">Plugins at sourceforge</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginGenerate/">Make a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginDetail/">Plugin details</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Deployment and usage</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineOverview/">Running bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngine/">Schedule bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Jobqueue/">Job Queue</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DirMonitor/">Directory Monitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineReturnCode/">Return codes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHandleErrors/">Handle production errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentErrorReports/">Email notification for errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Archiving/">Archiving of EDI files</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DaemonProcesses/">Run as service/daemon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../LinuxDaemons/">Linux Daemons</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../WindowsServices/">Windows Services</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Multiple environments</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironments/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironmentsVirtual/">Virtual environments</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAdvanced/">Advanced Deployment</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserSecurity/">User Rights</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHttps/">Bots-monitor over HTTPS</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentWebserver/">Use Apache2</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Use MySQL/PostgreSQL</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#use-mysql-or-postgresql-as-database">Use MySQL or PostgreSQL as database</a></li>
+                
+                    <li><a class="toctree-l4" href="#postgresql">PostgreSQL</a></li>
+                
+                    <li><a class="toctree-l4" href="#mysql">MySQL</a></li>
+                
+                    <li><a class="toctree-l4" href="#mysql-on-windows">MySQL on Windows</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAS2/">Using AS2 with Bots</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEnv/">Configuration change management</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAcceptance/">Isolated acceptance test</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAutopush/">Push test->production</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentTestSet/">Build test-set</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Performance/">Performance/big volumes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Troubleshooting/">Troubleshooting FAQ</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BotsName/">The name "Bots"</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDetail/">Technical overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDirectoryLayout/">Directories and files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartConfigurationFiles/">Configuration files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Glossary/">Glossary of terms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Changes and migrate</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate320/">Bots 3.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V320changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate310/">Bots 3.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate300/">Bots 3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300rcchanges/">Changes 3.0.0rc/3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate220/">Changes/migrate 2.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate210/">Changes/migrate 2.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateKidGenshi/">Migrate Kid to Genshi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDjango/">Migrate Django versions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDatabase/">Migrate database</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialHome/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialEdiBasics/">EDI Basics</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../OdooIntegration/">Integration with Odoo/OpenERP</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../NewToPython/">New to python?</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Links/">External reference links</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UsefulTools/">Useful Tools</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Bots EDI Translator Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Use MySQL/PostgreSQL</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="use-mysql-or-postgresql-as-database">Use MySQL or PostgreSQL as database</h2>
+<p>Backgrond information: </p>
+<ul>
+<li>Default bots uses a SQLite database. This is included in the standard
+    installation and works out-of-the-box. Performance of SQLite is good! </li>
+<li>Bots always uses utf-8 in the database communication. </li>
+<li>Database tables are installed using django-machinery. See django docs. </li>
+<li>After installation, you may want to <a href="../MigrateDatabase/">migrate some
+    data</a>. </li>
+<li>You might have to manually add a database
+    trigger if using <a href="../MappingPersist/">persist functions</a>.\</li>
+</ul>
+<h3 id="postgresql">PostgreSQL</h3>
+<ol>
+<li>install PostgreSQL.</li>
+<li>install psycopg2 as python database adapter.</li>
+<li>login in command line client of database.</li>
+<li>Create database (CLI) :
+    <code>CREATE DATABASE botsdb WITH ENCODING 'UTF8';</code></li>
+<li>Create user (CLI): <code>CREATE USER bots WITH PASSWORD 'botsbots';</code></li>
+<li>Give user rights: (CLI)
+    <code>GRANT ALL PRIVILEGES ON DATABASE botsdb TO bots;</code></li>
+<li>make sure database accepts connections over (non-local) TCP/IP:
+    change parameter listen_addresses in in postgresql.conf; add/change
+    setting for user in pg_hba.conf.</li>
+<li>Set connection parameter in bots configuration in
+    <em>bots/config/settings.py</em>. Examples are provided - see comments in
+    settings.py</li>
+<li>Create the required tables (CLI):<ul>
+<li>(CLI) <code>django-admin syncdb  --settings='bots.config.settings'</code></li>
+<li>(CLI) or when bots is not installed in the default directory:
+    <code>django-admin syncdb --pythonpath='path to bots' --settings='bots.config.settings'</code></li>
+<li>Django asks for name etc of default user.</li>
+</ul>
+</li>
+</ol>
+<h3 id="mysql">MySQL</h3>
+<ol>
+<li>install MySQL.</li>
+<li>install mysql-Python as python database adapter.</li>
+<li>login in command line client of database.</li>
+<li>Create database (CLI):
+    <code>CREATE DATABASE botsdb DEFAULT CHARSET utf8;</code></li>
+<li>Create user (CLI): <code>CREATE USER 'bots' IDENTIFIED BY 'botsbots';</code></li>
+<li>Give user rights (CLI):
+    <code>GRANT ALL PRIVILEGES ON botsdb.* TO 'bots';</code></li>
+<li>make sure database accepts connections over (non-local) TCP/IP:
+    change parameter 'binds' in /etc/mysql/my.cfg.</li>
+<li>Set connection parameter in bots configuration in
+    <em>bots/config/settings.py</em>. Examples are provided - see comments in
+    settings.py</li>
+<li>Create the required tables:<ul>
+<li>(CLI) <code>django-admin syncdb  --settings='bots.config.settings'</code></li>
+<li>(CLI) or when bots is not installed in the default directory:
+    <code>django-admin syncdb --pythonpath='path to bots' --settings='bots.config.settings'</code></li>
+<li>Django asks for name etc of default user.</li>
+</ul>
+</li>
+</ol>
+<h3 id="mysql-on-windows">MySQL on Windows</h3>
+<ol>
+<li>Download <a href="http://www.mysql.com/downloads/mysql/">MySQL community
+    server</a> msi installer.
+    (tested version 5.5.20)</li>
+<li>Run the installer, do a "typical" installation and follow the
+    prompts. On the final screen, make sure <em>Launch the MySQL Instance
+    Configuration Wizard</em> box is ticked.</li>
+<li>When the configuration wizard starts, make the following
+    selections:<ul>
+<li>Detailed configuration</li>
+<li>Server machine (you may choose developer for your bots test
+    environment)</li>
+<li>Transactional database</li>
+<li>DSS/OLAP (20 connections)</li>
+<li>Enable TCP/IP and Strict mode (defaults)</li>
+<li>Best support for multilingualism (<strong>UTF8</strong>)</li>
+<li>Install as Windows service (default)</li>
+<li>Modify security settings; enter a root password and write it
+    down.</li>
+<li>Execute configuration</li>
+<li>Create a shortcut to <em>C:\Program Files\MySQL\MySQL Server
+    5.5\bin\MySQLInstanceConfig.exe</em> in case you want to modify
+    any of these settings later.</li>
+</ul>
+</li>
+<li>Go to <em>Start > Programs > MySQL > MySQL Server > MySQL Command
+    Line Client</em>. Enter your root password when prompted. You should now
+    have a <code>mysql&gt;</code> command prompt.</li>
+<li>
+<p>Enter the following MySQL commands at the prompt:</p>
+<pre><code>mysql&gt; CREATE DATABASE botsdb DEFAULT CHARSET utf8;
+ Query OK, 1 row affected (0.01 sec)
+
+mysql&gt; CREATE USER 'bots' IDENTIFIED BY 'botsbots';
+ Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; GRANT ALL ON botsdb.* TO 'bots';
+ Query OK, 0 rows affected (0.03 sec)
+</code></pre>
+</li>
+<li>
+<p>Download and install <a href="http://www.codegood.com/downloads">MySQL-python for
+    Windows</a> to suit your python
+    version (tested MySQL-python-1.2.3.win32-py2.7.exe)</p>
+</li>
+<li>
+<p>Set connection parameters in bots configuration in
+    <em>bots/config/settings.py</em>. MySQL example is provided, I only changed
+    HOST.</p>
+<pre><code>#MySQL:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'botsdb',
+        'USER': 'bots',
+        'PASSWORD': 'botsbots',
+        'HOST': 'localhost',  #database is on same server as Bots
+        'PORT': '3306',
+        'OPTIONS': {'use_unicode':True,'charset':'utf8','init_command': 'SET storage_engine=INNODB'},
+        }
+    }
+</code></pre>
+</li>
+<li>
+<p>Create the required tables from a command prompt. Django asks for
+    name etc of superuser. (enter user: bots, password: botsbots)</p>
+<pre><code>&gt; D:\python27\python.exe D:\Python27\lib\site-packages\django\bin\django-admin.py syncdb 
+  --settings=bots.config.settings
+
+Creating tables ...
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_user_permissions
+Creating table auth_user_groups
+Creating table auth_user
+Creating table auth_message
+Creating table django_content_type
+Creating table django_session
+Creating table django_admin_log
+Creating table confirmrule
+Creating table ccodetrigger
+Creating table ccode
+Creating table channel
+Creating table partnergroup
+Creating table partner
+Creating table chanpar
+Creating table translate
+Creating table routes
+Creating table filereport
+Creating table mutex
+Creating table persist
+Creating table report
+Creating table ta
+Creating table uniek
+
+You just installed Django's auth system, which means you don't have any superusers defined.
+Would you like to create one now? (yes/no): yes
+Username (Leave blank to use 'mike'): bots
+E-mail address: bots@bots.com
+Password: botsbots
+Password (again): botsbots
+Superuser created successfully.
+Installing custom SQL ...
+Installing indexes ...
+No fixtures found.
+</code></pre>
+</li>
+<li>
+<p>Now start bots-webserver and log in as bots.</p>
+</li>
+</ol>
+<p>Note: The database is stored in C:/ProgramData/MySQL/MySQL Server
+5.5/Data/ by default (on Windows 7).  </p>
+<p>To move the database, do the following:</p>
+<ol>
+<li>
+<p>Stop the MySQL service</p>
+</li>
+<li>
+<p>Move the /Data/ folder only to your required location (eg. D:/MySQL
+    Server 5.5/Data/</p>
+</li>
+<li>
+<p>Make sure the permissions are moved with it. "NETWORK SERVCE" must have
+    full control</p>
+</li>
+<li>
+<p>Change the setting "datadir" in C:/ProgramData/MySQL/MySQL Server
+    5.5/my.ini to indicate the new folder location\</p>
+<pre><code># Path to the database root
+datadir=D:/MySQL Server 5.6/Data
+</code></pre>
+</li>
+<li>
+<p>Restart the MySQL service. If it will not start, check permissions!</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../DeploymentAS2/" class="btn btn-neutral float-right" title="Using AS2 with Bots">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../DeploymentWebserver/" class="btn btn-neutral" title="Use Apache2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../DeploymentWebserver/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../DeploymentAS2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

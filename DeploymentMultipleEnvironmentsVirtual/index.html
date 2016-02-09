@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Virtual environments - Bots EDI Translator Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Virtual environments";
+    var mkdocs_page_input_path = "DeploymentMultipleEnvironmentsVirtual.md";
+    var mkdocs_page_url = "/DeploymentMultipleEnvironmentsVirtual/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Bots EDI Translator Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Get started with bots</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Installation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallProcedure/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallWindows/">Installation Windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstalllinux/">Installation Linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallFaq/">Installation FAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartInstallDependencies/">Dependencies</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartGetBotsRunning/">Get bots running</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Tutorial</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPlugin/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginResults/">View results</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginSetup/">Walk through setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPluginDepth/">What happened</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Guide for bots-monitor</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MonitorRereceive/">How to rereceive</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Configuration</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewConfiguration/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationHow/">How to do configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationDIY/">DIY step by step</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Route</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesComposite/">Composite routes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesPass/">PassThrough (no translation)</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Route scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RoutesScripts/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsOverviewExits/">Overview Exit points</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExample/">Preprocessing recipes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleWholeRoute/">Take over whole route</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channel/communication</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Filenames/">Filenames</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsDatabase/">Database communication</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsScripting/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsExample/">Small user script</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsSubclass/">Subclassing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../CommunicationScriptsType/">communication type 'communicationscript'</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelPortNumbers/">Channel port numbers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelFileLock/">Safe file writing/locking</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Translation</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationDetail/">How translations work</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationRules/">What translation when?</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationAlt/">Chained translations (alt)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationVersions/">Multiple versions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Mapping Scripts</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingHowMappingWorks/">How mapping works</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingGet/">Get from message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPut/">Put in message</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingFunction/">Div mapping functions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCcode/">Code conversion</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingCalculate/">Calculate and count</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPersist/">Persist (store data)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingEAN/">EAN/UCC check digits</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingChangedelete/">Change and delete</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Grammars</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsHowToGet/">How to get grammars</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsSyntax/">Syntax parameters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsStructure/">Structure</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsRecorddefs/">Recorddefs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessage/">Nextmessage</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsNextmessageblock/">Nextmessageblock</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationCharset/">Edifact charsets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../XMLnamespace/">XML namespaces</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationBotskey/">Document View (botskey)</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>User Scripting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../UserScriptingIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../RouteScriptsExampleBotsEngine/">Bots engine scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Confirmations/">Confirmations/acknowledgements</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Split/merge/envelope</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplitMerge/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplit/">Split edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationMerge/">Merge/envelope edi files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Edi partners</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartners/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartner/">Partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TranslationperPartnerExtended/">Organize partner specific translations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../GrammarsPartnerSyntax/">Partner dependent syntax</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationPartnerGroup/">Partner groups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ChannelsRecipes/">Email addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MappingPartnerLookup/">Partner look-up</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../EnvelopeScripting/">Envelope scripting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Charsets/">Character-sets/unicode</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Debug/">How to debug</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Plugins</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginInstall/">Install a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginList/">Plugins at sourceforge</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginGenerate/">Make a plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../PluginDetail/">Plugin details</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Deployment and usage</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineOverview/">Running bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngine/">Schedule bots-engine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Jobqueue/">Job Queue</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DirMonitor/">Directory Monitor</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEngineReturnCode/">Return codes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHandleErrors/">Handle production errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentErrorReports/">Email notification for errors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Archiving/">Archiving of EDI files</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DaemonProcesses/">Run as service/daemon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../LinuxDaemons/">Linux Daemons</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../WindowsServices/">Windows Services</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Multiple environments</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentMultipleEnvironments/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Virtual environments</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#using-virtualenv">Using virtualenv</a></li>
+                
+                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-your-environments">Create your environments</a></li>
+                
+                    <li><a class="toctree-l4" href="#activate-and-deactivate-environments">Activate and deactivate environments</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-bots-in-a-virtual-environment">Install Bots in a virtual environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#start-bots-webserver-in-the-virtual-environment">Start Bots Webserver in the virtual environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#running-multiple-bots-environments-concurrently">Running multiple Bots environments concurrently</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAdvanced/">Advanced Deployment</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserSecurity/">User Rights</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentHttps/">Bots-monitor over HTTPS</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentWebserver/">Use Apache2</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentOtherDatabase/">Use MySQL/PostgreSQL</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAS2/">Using AS2 with Bots</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentEnv/">Configuration change management</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAcceptance/">Isolated acceptance test</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentAutopush/">Push test->production</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DeploymentTestSet/">Build test-set</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Performance/">Performance/big volumes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Troubleshooting/">Troubleshooting FAQ</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Overview</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewIntroduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../BotsName/">The name "Bots"</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDetail/">Technical overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../OverviewDirectoryLayout/">Directories and files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../StartConfigurationFiles/">Configuration files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Glossary/">Glossary of terms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Changes and migrate</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate320/">Bots 3.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V320changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate310/">Bots 3.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V310migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate300/">Bots 3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300changes/">Changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300migrate/">Migrate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../V300rcchanges/">Changes 3.0.0rc/3.0.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate220/">Changes/migrate 2.2.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Migrate210/">Changes/migrate 2.1.0</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateKidGenshi/">Migrate Kid to Genshi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDjango/">Migrate Django versions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MigrateDatabase/">Migrate database</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tutorials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialHome/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../TutorialEdiBasics/">EDI Basics</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../OdooIntegration/">Integration with Odoo/OpenERP</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../NewToPython/">New to python?</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Links/">External reference links</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UsefulTools/">Useful Tools</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Bots EDI Translator Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Multiple environments &raquo;</li>
+        
+      
+    
+    <li>Virtual environments</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="using-virtualenv">Using virtualenv</h2>
+<p>virtualenv is a tool to create isolated
+Python environments. Please refer to the <a href="https://pypi.python.org/pypi/virtualenv">virtualenv package
+documentation</a> to understand
+what it does and how to install it. Virtual environments are not just
+for Bots; you can use them for any other python development. That is why
+I started investigating this methodology.<br />
+ This guide is based on information from the following links.<br />
+<a href="https://zignar.net/2012/06/17/install-python-on-windows/">https://zignar.net/2012/06/17/install-python-on-windows/</a><br />
+<a href="http://www.stuartellis.eu/articles/python-development-windows/">http://www.stuartellis.eu/articles/python-development-windows/</a>  </p>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>
+<p>Install python: You have probably done this already! Make sure you
+    have the paths of your <code>python27</code> and <code>python27\scripts</code> included in the
+    <a href="http://en.wikipedia.org/wiki/PATH_%28variable%29">system path variable</a>.</p>
+</li>
+<li>
+<p>Install distribute: Download <a href="http://python-distribute.org/distribute_setup.py">distribute_setup.py</a>
+    and invoke it using python.</p>
+<pre><code>&gt;&gt; python C:\Path\to\distribute_setup.py
+</code></pre>
+</li>
+<li>
+<p>Install Pip: Download
+    <a href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py">get-pip.py</a>
+    (right click, save as) and invoke it using python.</p>
+<pre><code>&gt;&gt; python C:\Path\to\get-pip.py
+</code></pre>
+</li>
+<li>
+<p>Install Virtualenv: Once Pip is installed, installing any other
+    package (that is available in the Python Package Index) is easy.</p>
+<pre><code>&gt;&gt; pip install virtualenv
+</code></pre>
+</li>
+<li>
+<p>Install C and C++ compilers (optional): Not all python libraries are
+    pure python, some may contain C code that must be compiled to install
+    successfully. Download <a href="http://sourceforge.net/projects/mingw/">MinGW</a>,
+    run it, and select the C and C++ compilers to install. When complete,
+    edit the file <code>Python27\Lib\distutils\cygwincompiler.py</code> and remove
+    <code>-mno-cygwin</code> from lines 322-326. This flag is no longer supported. You
+    also need to add a setting to each virtual environment that needs to use
+    the compilers (described in the next section). Make sure you have the
+    path of your <code>MinGW\bin</code> included in the <a href="http://en.wikipedia.org/wiki/PATH_%28variable%29">system path
+    variable</a>.</p>
+</li>
+</ol>
+<h3 id="create-your-environments">Create your environments</h3>
+<p>Technically your virtual environments can be stored and scattered
+anywhere, but it makes sense to keep them all grouped together. I
+suggest you create a "root" directory for environments, each environment
+will be a subdirectory, eg.</p>
+<pre><code>D:\&gt; mkdir PythonEnv
+D:\&gt; cd PythonEnv
+D:\PythonEnv&gt;
+</code></pre>
+<p>Create as many environments as you need (for ease of use, keep
+environment names short but meaningful and without spaces), eg. bots310</p>
+<pre><code>D:\PythonEnv&gt; virtualenv bots310
+New python executable in bots310\Scripts\python.exe
+Installing Setuptools...........................................................
+............................done.
+Installing Pip..................................................................
+.......................done.
+
+D:\PythonEnv&gt;
+</code></pre>
+<p>If you installed compilers in the previous section and want to use them
+for this environment, then edit <code>Lib\distutils\distutils.cfg</code> within the
+environment folder, and add</p>
+<pre><code>[build]
+compiler=mingw32
+</code></pre>
+<h3 id="activate-and-deactivate-environments">Activate and deactivate environments</h3>
+<p>To activate an environment, use the activate command in it's script
+directory. Notice your command prompt changes to show the active
+environment in brackets. Only one environment can be "activated" at a
+time, in order to install modules etc.</p>
+<pre><code>D:\PythonEnv&gt; bots310\scripts\activate
+(bots310) D:\PythonEnv&gt;
+</code></pre>
+<p>To deactivate the current environment, use the deactivate command.
+Notice your command prompt changes back to show no active environment in
+brackets.</p>
+<pre><code>(bots310) D:\PythonEnv&gt; deactivate
+D:\PythonEnv&gt;
+</code></pre>
+<p>Optional; create an activate.bat file in your environment root
+directory. This gives you a shortcut to activate environments.</p>
+<pre><code>REM activate.bat gives you a shortcut to activate python environments
+REM eg. activate bots310
+call "%1\scripts\activate"
+</code></pre>
+<h3 id="install-bots-in-a-virtual-environment">Install Bots in a virtual environment</h3>
+<p>First, activate the required environment.<br />
+Install Bots and dependencies using pip (don't use the Bots Windows
+installer, because it installs to the default python folder!)</p>
+<h4 id="install-bots-from-local-downloaded-targz-file">Install Bots from local downloaded .tar.gz file</h4>
+<pre><code>(bots310) D:\PythonEnv&gt; pip install .\bots-3.1.0.tar.gz
+Unpacking d:\pythonenv\bots-3.1.0.tar.gz
+  Running setup.py egg_info for package from file:///d7C%5Cpythonenv%5Cbots-3.1.0.tar.gz
+
+Installing collected packages: bots
+  Running setup.py install for bots
+
+Successfully installed bots
+Cleaning up...
+
+(bots310) D:\PythonEnv&gt;
+</code></pre>
+<h4 id="install-django-version-14x">Install Django (version 1.4.x)</h4>
+<pre><code>(bots310) D:\PythonEnv&gt;pip install Django==1.4.6
+Downloading/unpacking Django==1.4.6
+  Downloading Django-1.4.6.tar.gz (7.7MB): 7.7MB downloaded
+  Running setup.py egg_info for package Django
+
+Installing collected packages: Django
+  Running setup.py install for Django
+
+Successfully installed Django
+Cleaning up...
+
+(bots310) D:\PythonEnv&gt;
+</code></pre>
+<h4 id="install-cherrypy-latest">Install cherrypy (latest)</h4>
+<pre><code>(bots310) D:\PythonEnv&gt; pip install cherrypy
+Downloading/unpacking cherrypy
+  Downloading CherryPy-3.2.4.tar.gz (424kB): 424kB downloaded
+  Running setup.py egg_info for package cherrypy
+
+Installing collected packages: cherrypy
+  Running setup.py install for cherrypy
+
+Successfully installed cherrypy
+Cleaning up...
+
+(bots310) D:\PythonEnv&gt;
+</code></pre>
+<h4 id="install-genshi-optional-required-for-template-html-output">Install Genshi (optional, required for template-html output)</h4>
+<pre><code>(bots310) D:\PythonEnv&gt; pip install Genshi
+Downloading/unpacking Genshi
+  You are installing a potentially insecure and unverifiable file. Future versions of pip will default to disallowing insecure files.
+  Downloading Genshi-0.7.tar.gz (491kB): 491kB downloaded
+  Running setup.py egg_info for package Genshi
+
+    warning: no files found matching 'COPYING' under directory 'doc'
+    warning: no previously-included files matching '*' found under directory 'doc\logo.lineform'
+    warning: no previously-included files found matching 'doc\2000ft.graffle'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Installing collected packages: Genshi
+  Running setup.py install for Genshi
+    building 'genshi._speedups' extension
+    C:\MinGW\bin\gcc.exe -mdll -O -Wall -ID:\Python27\include -ID:\PythonEnv\bots310\PC -c genshi/_speedups.c -o build\temp.win32-2.7\Release\genshi\_speedups.o
+    C:\MinGW\bin\gcc.exe -shared -s build\temp.win32-2.7\Release\genshi\_speedups.o build\temp.win32-2.7\Release\genshi\_speedups.def -LD:\Python27\Libs -LD:\PythonEnv\bots310\libs -LD:\PythonEnv\bots310\PCbuild -lpython27 -lmsvcr90 -obuild\lib.win32-2.7\genshi\_speedups.pyd
+
+    warning: no files found matching 'COPYING' under directory 'doc'
+    warning: no previously-included files matching '*' found under directory 'doc\logo.lineform'
+    warning: no previously-included files found matching 'doc\2000ft.graffle'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Successfully installed Genshi
+Cleaning up...
+
+(bots310) D:\PythonEnv&gt;
+</code></pre>
+<h4 id="install-cdecimal-optional-improves-performance">Install cdecimal (optional, improves <a href="../Performance/">performance</a>)</h4>
+<p>This will not install/compile correctly on Windows using pip, and the
+installer is an msi (not exe) so easy_install won't work either. You
+can install it manually though; the two files needed are <code>cdedimal.pyd</code>
+and <code>cdecimal-2.3-py2.7.egg-info</code> and they go in your virtual
+environment's <code>site-packages</code> directory. There are two ways to get these
+files.</p>
+<ol>
+<li>Install cdecimal in the default python folder (eg.
+    <code>C:\python27\lib\site-packages</code>) using the windows msi installer,
+    then copy the two files to your virtual environment.</li>
+<li>Extract the files from the windows msi installer using a tool such
+    as <a href="http://www.lupopensuite.com/db/universalextractor.htm">universal
+    extractor</a>.</li>
+</ol>
+<h4 id="install-pycrypto-and-paramiko-optional-required-for-sftp-channels">Install pycrypto and paramiko (optional, required for sftp channels)</h4>
+<p>These will not install/compile correctly on Windows using pip. Instead,
+I used easy_install with a downloaded Windows installer exe.</p>
+<pre><code>(bots310) C:\PythonEnv&gt;easy_install pycrypto-2.1.0.win32-py2.7.exe
+
+Processing pycrypto-2.1.0.win32-py2.7.exe
+creating 'c:\docume~1\adadmi~3\locals~1\temp\1\easy_install-wy9qt4\pycrypto-2.1.
+0-py2.7-win32.egg' and adding 'c:\docume~1\adadmi~3\locals~1\temp\1\easy_install
+-wy9qt4\pycrypto-2.1.0-py2.7-win32.egg.tmp' to it
+Moving pycrypto-2.1.0-py2.7-win32.egg to c:\pythonenv\bots310\lib\site-packages
+Adding pycrypto 2.1.0 to easy-install.pth file
+
+Installed c:\pythonenv\bots310\lib\site-packages\pycrypto-2.1.0-py2.7-win32.egg
+Processing dependencies for pycrypto==2.1.0
+Finished processing dependencies for pycrypto==2.1.0
+
+(bots310) C:\PythonEnv&gt;easy_install paramiko-1.7.6.win32.exe
+
+Processing paramiko-1.7.6.win32.exe
+creating 'c:\docume~1\adadmi~3\locals~1\temp\1\easy_install-mwtlnu\paramiko-1.7.
+6-py2.7-win32.egg' and adding 'c:\docume~1\adadmi~3\locals~1\temp\1\easy_install
+-mwtlnu\paramiko-1.7.6-py2.7-win32.egg.tmp' to it
+Moving paramiko-1.7.6-py2.7-win32.egg to c:\pythonenv\bots310\lib\site-packages
+Adding paramiko 1.7.6 to easy-install.pth file
+
+Installed c:\pythonenv\bots310\lib\site-packages\paramiko-1.7.6-py2.7-win32.egg
+Processing dependencies for paramiko==1.7.6
+Finished processing dependencies for paramiko==1.7.6
+</code></pre>
+<h3 id="start-bots-webserver-in-the-virtual-environment">Start Bots Webserver in the virtual environment</h3>
+<p>You can simply start the webserver manually from commandline. The
+variable %VIRTUAL_ENV% contains the path to the activated environment.
+Using the start command causes a new console window to be opened.</p>
+<pre><code>(bots310) D:\PythonEnv&gt; start python %VIRTUAL_ENV%\scripts\bots-webserver.py
+</code></pre>
+<p>Alternatively you can modify the environment's activate command (it is a
+small batch file of about 25 lines). Edit
+<code>%VIRTUAL_ENV%\scripts\activate.bat</code> and add the above command to the
+end. Then every time you activate the environment, the webserver is
+started too. Same for jobqueueserver (if required). I also add a window
+title. eg.</p>
+<pre><code>start "webserver (bots310)" python %VIRTUAL_ENV%\scripts\bots-webserver.py
+</code></pre>
+<h3 id="running-multiple-bots-environments-concurrently">Running multiple Bots environments concurrently</h3>
+<p>Yes, this is possible!<br />
+Although only a single environment can be "activated", once they are
+created you can run multiple bots webservers and engines simultaneously
+from different environments, if configured with different ports.</p>
+<p>bots.ini - use different ports for each environment. eg.</p>
+<pre><code>[settings]
+#port used to assure only one instance of bots-engine is running. default: 28081
+port = 28091
+
+[webserver]
+#port at which at bots-gui is server. default is 8080
+port = 8090
+
+[jobqueue]
+# Port to use for the job queue xmlrpc server (on localhost). Default: 28082
+port = 28092
+</code></pre>
+<p>settings.py - add new setting for the session cookie name, and use a
+different name for each environment. This allows simultaneous login to
+each environment from the same browser. eg. use the environment name
+(default is 'sessionid')</p>
+<pre><code>#*********sessions, cookies, log out time*************************
+SESSION_COOKIE_NAME = 'bots310'
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../DeploymentAdvanced/" class="btn btn-neutral float-right" title="Advanced Deployment">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../DeploymentMultipleEnvironments/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../DeploymentMultipleEnvironments/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../DeploymentAdvanced/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
