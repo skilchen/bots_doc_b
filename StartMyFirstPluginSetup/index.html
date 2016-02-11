@@ -1242,14 +1242,14 @@ This will look like:<br />
 <p>A route tells bots what to do: where to get the edi-files, what type of files these
 are (this determines the translation done), and where to put the translated edi-files..<br />
 One route is configured, called 'myfirstfoute'.<br />
-The route uses communication channel 'myfirstroute_in' to get incoming
+The route uses communication channel <code>myfirstroute_in</code> to get incoming
 edi-files.<br />
 These are edifact format: <code>fromeditype=edifact</code>,
 <code>frommessagetype=edifact</code>.<br />
 Bots will figure out the exact messagetype (like ORDERSD96AUN) by
 itself.<br />
 The translated edi-files (fixed format) go to communication channel
-<code>myfirstroute\_out</code>.</p>
+<code>myfirstroute_out</code>.</p>
 <h3 id="view-the-communication-channels">View the communication channels</h3>
 <p>To view the communication channels configured:
 <em>bots-monitor->Configuration->Channels</em><br />
