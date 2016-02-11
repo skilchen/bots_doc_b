@@ -1254,9 +1254,9 @@ treats any text in the email body as another "attachment")</p>
         return False  #skip this attachment
 </code></pre>
 <h4 id="set-email-subject">Set email subject</h4>
-<p>Some edi-partners send signatures etc in their email.\
- By default bots uses a number for emails.\
- Sometimes you want a more meaningfull subject.\</p>
+<p>Some edi-partners send signatures etc in their email.<br />
+By default bots uses a number for emails.<br />
+Sometimes you want a more meaningfull subject.</p>
 <pre><code>def subject(channeldict,ta,subjectstring,content,*args,**kwargs):
     ta.synall()        #needed to get access to attributes of object ta (eg ta.frompartner)
     return 'EDI messages from ' + ta.frompartner + '_' + subjectstring
@@ -1328,7 +1328,6 @@ Not needed for bots 3.</p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-
 </footer>
 	  
         </div>
