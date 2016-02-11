@@ -26,7 +26,7 @@ Note: the errors bots gives for incoming edi-files are quite accurate;-))
 -   logging. Logging can be found in botssys/logging. Parameters in
     [bots.ini](StartConfigurationFiles.md) can be set to get more debug
     information:
-    -   log\_file\_level: set to DEBUG to get extended information.\
+    -   log\_file\_level: set to DEBUG to get extended information.
     -   readrecorddebug: information about the records that are read and
         their content.
     -   mappingdebug: information about the results of get()/put() in

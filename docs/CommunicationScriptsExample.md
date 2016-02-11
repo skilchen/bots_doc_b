@@ -15,9 +15,9 @@ treats any text in the email body as another "attachment")
 
 #### Set email subject
 
-Some edi-partners send signatures etc in their email.\
- By default bots uses a number for emails.\
- Sometimes you want a more meaningfull subject.\
+Some edi-partners send signatures etc in their email.  
+By default bots uses a number for emails.  
+Sometimes you want a more meaningfull subject.
 
     def subject(channeldict,ta,subjectstring,content,*args,**kwargs):
         ta.synall()        #needed to get access to attributes of object ta (eg ta.frompartner)

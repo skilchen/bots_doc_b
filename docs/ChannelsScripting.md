@@ -3,8 +3,8 @@ When the standard communication of bots does not fit your needs, use
 communicationscripts.  
 Instruction to make a channel script:
 
-1.  there must be channel in bots-monitor (or make a new one)\
-2.  make a communicationscript with the **same name** as the channelID\
+1.  there must be channel in bots-monitor (or make a new one)
+2.  make a communicationscript with the **same name** as the channelID
 3.  place the communicationscript in
     *bots/usersys/communicationscripts/channelid.py*
 
@@ -26,7 +26,7 @@ There are 3 types of communication scripts:
     [small user exits](CommunicationScriptsExample.md)
 
 2.  subclass: take-over of (parts of) communication script: user script
-    subclasses existing communication type.\
+    subclasses existing communication type.
 
 3.  communication type 'communicationscript'. Bots tries to do the
     bots-handling of files, you provide the communication details. Examples

@@ -1,6 +1,6 @@
 ## Useful tools for working with Bots
 
-These are programs you can use in bots development and deployment. (please add more)\
+These are programs you can use in bots development and deployment. (please add more)
 
 ### Text Editors
 

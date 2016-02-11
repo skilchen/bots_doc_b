@@ -59,7 +59,7 @@ bots-engine.py --help
     -   in subdirectories of bots/botssys/data.
     -   this is where the edi files are fetched from by the bots-monitor
         (the 'filer' module).
--   Cleanup of old files\
+-   Cleanup of old files
     -   bots manages cleanup of archive and internal storage, based on
         configuration settings for number of days to keep.
     -   Incoming files are (usually, unless testing) removed by the

@@ -13,7 +13,7 @@
     Example 1. In channel: filename is "myfilename\_*.edi.tmp",
     -   tmp-part is ".tmp"  
     -   Bots writes: "myfilename\_12345.edi.tmp"  
-    -   Bots renames: "myfilename\_12345.edi"\
+    -   Bots renames: "myfilename\_12345.edi"
 
 2.  System lock: use system file locks for reading or writing edi
     files (windows, \*nix).

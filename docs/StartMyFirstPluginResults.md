@@ -15,7 +15,7 @@ run-\>Incoming*:
 
 ![](Myfirst_incoming_last_run.png)
  
-View all incoming files via *bots-monitor-\>All runs-\>Incoming*:\
+View all incoming files via *bots-monitor-\>All runs-\>Incoming*:
 
 ![](Myfirst_incoming_all.png) 
  

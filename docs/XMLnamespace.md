@@ -137,7 +137,7 @@ Now in the mapping script, read the xmlns value from grammar.
 
         xmlns = grammar.grammarread('xml',inn.ta_info['messagetype']).syntax['xmlns']
 
-Then use it wherever needed in the mapping, like this...\
+Then use it wherever needed in the mapping, like this...
 
         # Get OrderNumber from XML with namespace
         OrderNumber = inn.get({'BOTSID':xmlns+'Order',xmlns+'OrderNumber':None})

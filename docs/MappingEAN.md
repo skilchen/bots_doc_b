@@ -25,7 +25,7 @@ Returns EAN number including check digit (adds checkdigit).
 
 ### transform.calceancheckdigit(EAN\_number)
 
-Returns the checkdigit-string for a number without check-digit.\
+Returns the checkdigit-string for a number without check-digit.
 
      transform.calceancheckdigit('871234567890') 
      #returns '6' for EAN number '871234567890'.

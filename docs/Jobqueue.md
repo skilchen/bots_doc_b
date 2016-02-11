@@ -5,7 +5,7 @@ Purpose of the bots jobqueue is to enable better scheduling of bots engine:
 -	ensures only a single bots-engine runs at any time. 
 -	no engine runs are lost/discarded.
 -	next engine run is started as soon as previous run has ended. Use of the
-	job queue is optional, but is recommended if [scheduling bots-engine](DeploymentEngine.md).\
+	job queue is optional, but is recommended if [scheduling bots-engine](DeploymentEngine.md).
 
 Details: 
 
