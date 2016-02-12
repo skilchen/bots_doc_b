@@ -23,7 +23,7 @@ A nice approach is:
 
 **the default mapping**  
 Script file 'orders2idoc.py', translates edifact ORDERS to idoc
-ORDERS05)\
+ORDERS05)
 
     def main(inn,out):
         # Order number

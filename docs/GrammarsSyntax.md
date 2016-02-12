@@ -23,7 +23,7 @@ The order in which overriding is done:
 -   default values are in *bots/grammars.py* (per editype). Do not
     change these values!
 -   envelope grammar (eg for x12: *bots/usersys/grammars/x12/x12.py*,
-    for edifact: *bots/usersys/grammars/edifact/edifact.py*)\
+    for edifact: *bots/usersys/grammars/edifact/edifact.py*)
 -   message grammar
 -   frompartner grammar (eg in
     *bots/usersys/partners/x12/partnerID.py*)

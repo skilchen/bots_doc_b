@@ -8,7 +8,7 @@ Backgrond information:
 -   After installation, you may want to [migrate some
 	data](MigrateDatabase.md). 
 -   You might have to manually add a database
-	trigger if using [persist functions](MappingPersist.md).\
+	trigger if using [persist functions](MappingPersist.md).
 
 ### PostgreSQL
 
@@ -177,7 +177,7 @@ To move the database, do the following:
 	full control
 
 4.  Change the setting "datadir" in C:/ProgramData/MySQL/MySQL Server
-	5.5/my.ini to indicate the new folder location\
+	5.5/my.ini to indicate the new folder location
 
     	# Path to the database root
     	datadir=D:/MySQL Server 5.6/Data

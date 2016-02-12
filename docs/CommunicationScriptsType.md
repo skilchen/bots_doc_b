@@ -56,7 +56,6 @@ main is a generator.
 
         yield ?
 
-\
 
 ### Example 3: outgoing files via external program all at once
 

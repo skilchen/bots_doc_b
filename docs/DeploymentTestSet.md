@@ -35,7 +35,7 @@ Some things to look at when you build a test-set:
 	convenient).
 
 -	Counters (for message numbers, file names etc (via unique()) are the
-	same in every run, so results are the same every run.\
+	same in every run, so results are the same every run.
 
 -	If date/times need to made, use transform.strftime() for this; it is
 	like pythons time.strftime() but gives always the same date/time in

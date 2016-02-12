@@ -18,7 +18,7 @@ How the input values for the look-up are determined:
     -   configured in the route, eg for editype csv
     -   for edifact, x12 and tradacoms: bots figures out the detailed
         messagetype. Example:
-        -   in route: editype: edifact, messagetype: edifact\
+        -   in route: editype: edifact, messagetype: edifact
         -   in incoming edi file bots finds detail messagetype
             'ORDERSD96AUN'.
 

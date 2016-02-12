@@ -29,9 +29,9 @@ configured correct.
 -   plugin *x12-850-856-810-997*
     -   generates a 997 for incoming orders, and dispatches this via a
         composite route.
-    -   inbound route is configured to process 997's.\
+    -   inbound route is configured to process 997's.
 -   plugin *demo\_mdn\_confirmations* sends and receives
-    email-confirmations (MDN)\
+    email-confirmations (MDN)
 -   plugin *edifact\_ordersdesadvinvoic* sends APERAK for incoming
     orders - if indicated in incoming order.
 
@@ -81,8 +81,8 @@ configured correct.
 
 ### Send 997/acknowledgement for incoming x12 orders
 
-Before attempting to configure confirmations create and test a route\
- for a typical X12 message e.g. 850. Once that is working correctly,
+Before attempting to configure confirmations create and test a route
+for a typical X12 message e.g. 850. Once that is working correctly,
 confirmations can be configured for the route. Bots will now generate a
 997 message for each 850 recipient. Notice that the 997 is in the same
 Route as the 850. Probably you will want the 997 to go back out to the

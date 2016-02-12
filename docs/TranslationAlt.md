@@ -72,7 +72,7 @@ Use cases:
 2.  Map inputs to standard format, also map standard format to human
     readable version (eg. html template)
     Both out-objects are output by Bots and can be sent to same or
-    different channels using channel filtering.\
+    different channels using channel filtering.
 
             # if the first output is not needed to send somewhere, discard it
             # omit this step and you will get both outputs

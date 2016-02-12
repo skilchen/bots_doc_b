@@ -5,7 +5,7 @@
  	Bots uses grammars to parse, check and generate edi files.  
  	Grammars files are independent of the editype: a grammar for a csv
 	files looks the same as a grammar for a x12 file.  
- 	Grammar files are in: *usersys/grammars/editype/grammar name.py*\
+ 	Grammar files are in: *usersys/grammars/editype/grammar name.py*
 
 
 ### Learn grammar by example

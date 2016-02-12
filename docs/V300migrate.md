@@ -76,10 +76,10 @@ Overview:
     	the 'ENGINE'-value of the new settings.py.
 
 6. 	update the database.
-	-   use command-prompt/dos-box\
-	-   goto directory C:\\Python27\\Scripts\
+	-   use command-prompt/dos-box
+	-   goto directory C:\\Python27\\Scripts
 	-   command-line: `C:\Python27\python bots-updatedb.py`
-	-   should report that database is successful changed.\
+	-   should report that database is successful changed.
 	    
 If you use a 64-bits version of windows another option is to use
 the 64-bits versions of python and bots.
