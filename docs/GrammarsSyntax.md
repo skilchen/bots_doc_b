@@ -55,7 +55,7 @@ add\_crlfafterrecord\_sep         |Out   |put **extra** character after a record
 acceptspaceinnumfield             |In    |Do not raise error when numeric field contains only spaces but assume value is 0
 allow\_lastrecordnotclosedproperly|In    |(csv) allows last record not to have record separator
 charset                           |In    |charset to use; (edifact, xml) is overridden by charset-declaration in content.
-|                                 |Out   |charset to use in output. Bots is quite strict in this.
+                                  |Out   |charset to use in output. Bots is quite strict in this.
 checkcharsetin                    |In    |what to do for chars not in charset. Possible values 'strict' (gives error) or 'ignore' (skip the characters not in the charset) or 'botsreplace' (replace with char as set in bots.ini; default is space)
 checkcharsetout                   |Out   |what to do for chars not in charset. Possible values 'strict' (gives error), 'ignore' (skip the characters not in the charset) or 'botsreplace' (replace with char as set in bots.ini; default is space)
 checkfixedrecordtoolong           |In    |(fixed): warn if record too long. Possible values: True/False, default: True

@@ -1,6 +1,7 @@
-# Advanced Deployment #
+## Advanced Deployment
 
 Topics:
+
   1. If more users have access to bots-monitor, use [limited rights for users](UserSecurity.md).
   1. If you use bots-monitor over the internet/outside your LAN, use [HTTPS/SSL connection](DeploymentHttps.md).
   1. Use [MySQL or PostgreSQL as the Bots database](DeploymentOtherDatabase.md).
