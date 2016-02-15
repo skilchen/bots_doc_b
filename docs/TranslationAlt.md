@@ -14,8 +14,8 @@ How this works:
 -   mapping script returns alt-value
 -   do another translation using the alt-value.
     
-Background information: [TranslationRules how bots determines what
-to translate](.md).
+Background information: [how bots determines what
+to translate](TranslationRules.md).
 
 ### By example
 
