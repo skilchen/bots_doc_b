@@ -1249,7 +1249,7 @@ def main(inn,out):
     #The 'qualifier' determines the type of date.
     #Fetch the dates like this:
     out.put({'BOTSID':'HEA','ORDERDATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'137','C507.2380':None})})     #get statement ONLY looks for DTM with qualifier 137
-    out.put({'BOTSID':'HEA','DELIVERY\_DATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'2','C507.2380':None})})
+    out.put({'BOTSID':'HEA','DELIVERY_DATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'2','C507.2380':None})})
     #please note: no looping over the DTM-records, just get the data! 
 
     #The orderlines are in a LIN-recordgroup; so we want each line in its own fixed LIN-record. 
@@ -1259,15 +1259,15 @@ def main(inn,out):
         lou = out.putloop({'BOTSID':'HEA'},{'BOTSID':'LIN'}) 
         #Note: in this loop get() is used on the lin-object, and put() is used for the lou-object!
         lou.put({'BOTSID':'LIN','LINENUMBER':lin.get({'BOTSID':'LIN','1082':None})})
-        lou.put({'BOTSID':'LIN','ARTICLE\_GTIN':lin.get({'BOTSID':'LIN','C212.7140':None})})
+        lou.put({'BOTSID':'LIN','ARTICLE_GTIN':lin.get({'BOTSID':'LIN','C212.7140':None})})
         lou.put({'BOTSID':'LIN','QUANTITY':lin.get({'BOTSID':'LIN'},{'BOTSID':'QTY','C186.6063':'21','C186.6060':None})})
 
     #OK, we did the lines, but forgot to map the party's - the parties are before the lines in the incoming message. 
     #No problem, get/put can be done anywhere in the mapping - we are NOT looping the incoming or outgoing message:
 
-    out.put({'BOTSID':'HEA','BUYER\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'BY','C082.3039':None})})
-    out.put({'BOTSID':'HEA','SUPPLIER\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'SU','C082.3039':None})})
-    out.put({'BOTSID':'HEA','DELIVERYPLACE\_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C082.3039':None})})
+    out.put({'BOTSID':'HEA','BUYER_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'BY','C082.3039':None})})
+    out.put({'BOTSID':'HEA','SUPPLIER_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'SU','C082.3039':None})})
+    out.put({'BOTSID':'HEA','DELIVERYPLACE_ID':inn.get({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C082.3039':None})})
 </code></pre>
 
 <h3 id="mpath-query-the-edi-data">Mpath: query the edi data</h3>
