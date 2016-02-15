@@ -7,8 +7,7 @@
 #bots calls the 'main' function in this mapping script 
 def main(inn,out): 
 	#inn: the object for the incoming message; via get() and getloop() the content of the message can be accessed. 
-    #out: the object for the outgoing message; via put() and putloop() content is written for
-    this message. 
+    #out: the object for the outgoing message; via put() and putloop() content is written for this message.  
     ordernumber = inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','1004':None}) #get the order-number. 
                                                                          #The order-number is in field '1004' of record BGM.
 	                                                                     #Record BGM is nested under record UNH.
