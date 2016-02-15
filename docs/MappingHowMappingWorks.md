@@ -8,10 +8,11 @@
 def main(inn,out): 
 	#inn: the object for the incoming message; via get() and getloop() the content of the message can be accessed. 
     #out: the object for the outgoing message; via put() and putloop() content is written for
-    this message. ordernumber = inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','1004':None}) #get the order-number. 
-                                                                                       #The order-number is in field '1004' of record BGM.
-	                                                                                   #Record BGM is nested under record UNH.
-	out.put({'BOTSID':'HEA','ORDERNUMBER':ordernumber})                                #put the order-number in the outgoing fixed message, field 'ORDERNUMBER' in record HEA.
+    this message. 
+    ordernumber = inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','1004':None}) #get the order-number. 
+                                                                         #The order-number is in field '1004' of record BGM.
+	                                                                     #Record BGM is nested under record UNH.
+	out.put({'BOTSID':'HEA','ORDERNUMBER':ordernumber})                  #put the order-number in the outgoing fixed message, field 'ORDERNUMBER' in record HEA.
     
     #We first did a get(), than a put(). This can be done in one line:
 	out.put({'BOTSID':'HEA','ORDERTYPE':inn.get({'BOTSID':'UNH'},{'BOTSID':'BGM','C002.1001':None})})
