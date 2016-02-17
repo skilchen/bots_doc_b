@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>None/StartIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -25,7 +25,7 @@
         
     <url>
      <loc>None/StartGetBotsRunning/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,13 +41,13 @@
         
     <url>
      <loc>None/MonitorIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MonitorRereceive/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -57,19 +57,19 @@
         
     <url>
      <loc>None/OverviewConfiguration/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationHow/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationDIY/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,19 +79,19 @@
         
     <url>
      <loc>None/RoutesIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/RoutesComposite/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/RoutesPass/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -107,19 +107,19 @@
         
     <url>
      <loc>None/ChannelsIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Filenames/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ChannelsDatabase/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -131,13 +131,13 @@
         
     <url>
      <loc>None/ChannelPortNumbers/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ChannelFileLock/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -147,43 +147,43 @@
         
     <url>
      <loc>None/TranslationIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationDetail/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationRules/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationperPartner/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationperPartnerExtended/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationAlt/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationVersions/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -193,67 +193,67 @@
         
     <url>
      <loc>None/MappingIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingHowMappingWorks/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingGet/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingPut/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingFunction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingCcode/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingPartnerLookup/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingCalculate/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingPersist/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingEAN/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingChangedelete/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -263,61 +263,61 @@
         
     <url>
      <loc>None/GrammarsIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsHowToGet/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsSyntax/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsStructure/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsRecorddefs/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsNextmessage/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsNextmessageblock/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsPartnerSyntax/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationCharset/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/XMLnamespace/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -326,7 +326,7 @@
     
     <url>
      <loc>None/ConfigurationBotskey/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -335,13 +335,13 @@
         
     <url>
      <loc>None/UserScriptingIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/RouteScriptsExampleBotsEngine/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -350,7 +350,7 @@
     
     <url>
      <loc>None/Confirmations/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -359,25 +359,25 @@
         
     <url>
      <loc>None/ConfigurationSplitMerge/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationSplit/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationMerge/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/EnvelopeScripting/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -387,49 +387,49 @@
         
     <url>
      <loc>None/ConfigurationPartners/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationperPartner/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TranslationperPartnerExtended/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/GrammarsPartnerSyntax/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ConfigurationPartnerGroup/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/ChannelsRecipes/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MappingPartnerLookup/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/EnvelopeScripting/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -438,7 +438,7 @@
     
     <url>
      <loc>None/Charsets/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -446,7 +446,7 @@
     
     <url>
      <loc>None/Debug/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -455,31 +455,31 @@
         
     <url>
      <loc>None/PluginIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/PluginInstall/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/PluginList/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/PluginGenerate/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/PluginDetail/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -489,37 +489,37 @@
         
     <url>
      <loc>None/DeploymentIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/DeploymentEngineOverview/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/DeploymentEngine/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Jobqueue/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/DirMonitor/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/DeploymentEngineReturnCode/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -528,7 +528,7 @@
     
     <url>
      <loc>None/DeploymentHandleErrors/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -536,7 +536,7 @@
     
     <url>
      <loc>None/DeploymentErrorReports/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -544,7 +544,7 @@
     
     <url>
      <loc>None/Archiving/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -552,7 +552,7 @@
     
     <url>
      <loc>None/DaemonProcesses/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -560,7 +560,7 @@
     
     <url>
      <loc>None/LinuxDaemons/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -568,7 +568,7 @@
     
     <url>
      <loc>None/WindowsServices/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -577,13 +577,13 @@
         
     <url>
      <loc>None/DeploymentMultipleEnvironments/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/DeploymentMultipleEnvironmentsVirtual/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -592,7 +592,7 @@
     
     <url>
      <loc>None/DeploymentAdvanced/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -600,7 +600,7 @@
     
     <url>
      <loc>None/UserSecurity/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -608,15 +608,15 @@
     
     <url>
      <loc>None/DeploymentHttps/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/DeploymentWebserver/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <loc>None/DeploymentApache2/</loc>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -624,7 +624,7 @@
     
     <url>
      <loc>None/DeploymentOtherDatabase/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -632,7 +632,7 @@
     
     <url>
      <loc>None/DeploymentAS2/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -640,7 +640,7 @@
     
     <url>
      <loc>None/DeploymentEnv/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -648,7 +648,7 @@
     
     <url>
      <loc>None/DeploymentAcceptance/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -656,7 +656,7 @@
     
     <url>
      <loc>None/DeploymentAutopush/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -664,7 +664,7 @@
     
     <url>
      <loc>None/DeploymentTestSet/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -672,7 +672,7 @@
     
     <url>
      <loc>None/Performance/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -680,7 +680,7 @@
     
     <url>
      <loc>None/Troubleshooting/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -689,37 +689,37 @@
         
     <url>
      <loc>None/OverviewIntroduction/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/BotsName/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/OverviewDetail/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/OverviewDirectoryLayout/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/StartConfigurationFiles/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Glossary/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -729,91 +729,91 @@
         
     <url>
      <loc>None/Migrate/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Migrate320/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V320changes/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Migrate310/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V310changes/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V310migrate/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Migrate300/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V300changes/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V300migrate/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/V300rcchanges/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Migrate220/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Migrate210/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MigrateKidGenshi/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MigrateDjango/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/MigrateDatabase/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -823,13 +823,13 @@
         
     <url>
      <loc>None/TutorialHome/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/TutorialEdiBasics/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -838,7 +838,7 @@
     
     <url>
      <loc>None/OdooIntegration/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -846,7 +846,7 @@
     
     <url>
      <loc>None/NewToPython/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -854,7 +854,7 @@
     
     <url>
      <loc>None/Links/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -862,7 +862,7 @@
     
     <url>
      <loc>None/UsefulTools/</loc>
-     <lastmod>2016-02-15</lastmod>
+     <lastmod>2016-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

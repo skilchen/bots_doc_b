@@ -8,7 +8,7 @@
   
   
   
-  <title>Introduction - Bots EDI Translator Documentation</title>
+  <title>Use Apache2 - Bots EDI Translator Documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction";
-    var mkdocs_page_input_path = "StartMyFirstPlugin.md";
-    var mkdocs_page_url = "/StartMyFirstPlugin/";
+    var mkdocs_page_name = "Use Apache2";
+    var mkdocs_page_input_path = "DeploymentApache2.md";
+    var mkdocs_page_url = "/DeploymentApache2/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -129,25 +129,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Introduction</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#my-first-plugin">My first plugin</a></li>
-                
-                    <li><a class="toctree-l4" href="#install-plugin-my95first95plugin">Install plugin 'my_first_plugin'</a></li>
-                
-                    <li><a class="toctree-l4" href="#activate-the-route">Activate the route</a></li>
-                
-                    <li><a class="toctree-l4" href="#run-the-translation">Run the translation</a></li>
-                
-                    <li><a class="toctree-l4" href="#view-the-results">View the results</a></li>
-                
-                    <li><a class="toctree-l4" href="#more">More</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../StartMyFirstPlugin/">Introduction</a>
         
     </li>
 
@@ -923,8 +906,21 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../DeploymentApache2/">Use Apache2</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Use Apache2</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#steps-to-deploy-bots-on-the-apache2-webserver">Steps to deploy Bots on the Apache2 Webserver.</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#procedure">Procedure</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -1219,16 +1215,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Get started with bots &raquo;</li>
-        
-      
-        
-          <li>Tutorial &raquo;</li>
-        
-      
     
-    <li>Introduction</li>
+    <li>Use Apache2</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -1238,65 +1226,74 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="my-first-plugin">My first plugin</h2>
-<p>Purpose of this tutorial is to get your first edi configuration
-running.<br />
-This is done by installing plugin 'my_first_plugin'; this plugin
-provides a working configuration.<br />
-When run, this configuration will read and write example edi messages
-(provided in the plugin) from your system.<br />
-In this configuration incoming edifact orders are translated to a fixed
-file format.</p>
-<h3 id="install-plugin-my95first95plugin">Install plugin 'my_first_plugin'</h3>
-<p>Assumed is:</p>
-<ol>
-<li>You've installed bots, see <a href="../StartInstallProcedure/">installation</a></li>
-<li>You've managed to get bots-monitor running, see <a href="../StartGetBotsRunning/">get bots
-    running</a>.</li>
-</ol>
-<p>Now download and install plugin 'my_first_plugin'.<br />
-Instructions for installing a plugin are <a href="../PluginInstall/">here</a>.<br />
-The plugin can be downloaded from <a href="http://sourceforge.net/projects/bots/files/plugins/">the bots sourceforge
-site</a>.</p>
-<h3 id="activate-the-route">Activate the route</h3>
-<ol>
-<li>go to the routes screen: <em>bots-monitor->Configuration->Routes</em></li>
-<li>note that route 'myfirstroute' is not active now (indicated by red
-    icon)</li>
-<li>select the tick-box in front of the route 'myfirstroute'</li>
-<li>select action 'activate/de-activate'</li>
-<li>click on the 'Go'-button behind the selected action.</li>
-<li>note that route 'myfirstroute' is active now (indicated by green
-    icon)</li>
-</ol>
-<h3 id="run-the-translation">Run the translation</h3>
-<p>Run the translation: <em>bots-monitor->Run->Run (Only New)</em>.<br />
-You will get notified that the bots-engine is started.<br />
-Bots-engine is the part of bots that does the translations and
-communications; it runs in the background. Bots-engine will be finished
-in approximately one second.</p>
-<h3 id="view-the-results">View the results</h3>
-<p>Now let's view the results of the translation:</p>
+                <h1 id="steps-to-deploy-bots-on-the-apache2-webserver">Steps to deploy Bots on the Apache2 Webserver.</h1>
+<h1 id="introduction">Introduction</h1>
 <ul>
-<li>First look at the results of the run: <em>bots-monitor->All
-    runs->Reports (per run)</em>. Each run of bots is represented by a
-    line; the last run is on top.</li>
-<li>View the incoming files via <em>bots-monitor->Last run->Incoming</em>.
-    Click on the incoming file to see its contents.</li>
-<li>View the outgoing files (the results of the translation) go to or
-    <em>bots-monitor->Last run->outgoing</em>. Again: click on the file name
-    to see its contents.</li>
+<li>Bots uses cherrypy webserver Out of the Box and in order to scale it, you need to run it on an Apache2 Web Server</li>
+<li>One Advantage that I can see is that with this is that apache2 will take care of staring the Bots Monitor so there is no need to create a daemon for the bots webserver.</li>
 </ul>
-<p>Note: this configuration reads the incoming files but does not delete
-them. So you can run it over and over again.</p>
-<h3 id="more">More</h3>
+<h1 id="procedure">Procedure</h1>
 <ul>
-<li>Screenshots and information about <a href="../StartMyFirstPluginResults/">viewing the
-    results</a>.</li>
-<li>Walk through the configuration in this plugin is
-    <a href="../StartMyFirstPluginSetup/">here</a>.</li>
-<li>A more detailed explanation about the 'run' and what happens in a
-    run is <a href="../StartMyFirstPluginDepth/">here</a>.</li>
+<li>Ensure that apache2 is installed and running on the system. (try <code>httpd -M</code>)</li>
+<li>The mod_wsgi package is needed for this set up, so install it and ensure that the line <code>LoadModule wsgi_module modules/mod_wsgi.so</code> is added to apache httpd.conf file</li>
+<li>Restart the apache server, run the command <code>httpd -M</code> and you should see the wsgi_module at the end.</li>
+<li>Now we need to shuffle a few directories, create a base directory called <strong>bots_app</strong> in your home folder (do not run under root)</li>
+<li>Move the folders <strong>botssys</strong>, <strong>usersys</strong>, <strong>media</strong> and <strong>config</strong> from the bots installation directory to <strong>bots_app</strong> folder. Do not forget to create sym links for these folders in the installation dir to this new location.</li>
+<li>Now add the following files to the  <strong>bots_app</strong> folder:</li>
+</ul>
+<pre><code>##bots.wsgi
+
+import sys
+import django.core.handlers.wsgi
+import mod_wsgi
+
+#set PYTHONPATH...not needed if bots is already on PYTHONPATH
+#sys.path.append('/usr/local/lib/python2.7/dist-packages')
+from bots import apachewebserver
+
+config = mod_wsgi.process_group
+apachewebserver.start(config)
+application = django.core.handlers.wsgi.WSGIHandler()
+</code></pre>
+
+<pre><code>##apache2.conf
+
+Listen &lt;PORT&gt;
+NameVirtualHost *:&lt;PORT&gt;
+## Use this if you run into socket errors on linux
+WSGISocketPrefix /var/run/wsgi
+
+&lt;VirtualHost *:&lt;PORT&gt;&gt;
+   WSGIScriptAlias / &lt;PATH TO UR HOME&gt;/bots_app/bots.wsgi
+   WSGIDaemonProcess config user=&lt;System User&gt; group=&lt;System User Group&gt;
+   WSGIProcessGroup config
+
+## Use this section only when enabling https for bots app
+   SSLEngine on
+   SSLCertificateFile /path/to/www.example.com.cert
+   SSLCertificateKeyFile /path/to/www.example.com.key
+
+   Alias /media &lt;PATH TO UR HOME&gt;/bots_app/media
+
+   &lt;Directory &lt;PATH TO UR HOME&gt;/bots_app/&gt;
+        Order deny,allow
+        Allow from all
+   &lt;/Directory&gt;
+
+   &lt;Directory &lt;PATH TO UR HOME&gt;/bots_app/media&gt;
+        Order deny,allow
+        Allow from all
+   &lt;/Directory&gt;
+
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<ul>
+<li>Add execute permission to the <strong>bots.wsgi</strong> file and also add the line <code>Include &lt;PATH TO UR HOME&gt;/bots_app/apache2.conf</code> at the end of the <strong>apache2 httpd.conf</strong> file.</li>
+<li>Restart apache server and open http://ip:port/, you should see the bots welcome screen. If you get permission errors or images are not loading then correct permissions need to be given to <strong>bots_app</strong> and its parent directory.</li>
+<li>Once the server is running the logs will be generated in the folder <strong>botssys/logging</strong> as <strong>apache_webserver_config.log</strong></li>
+<li>The script <strong>bots-webserver.py</strong> should not be used now as apache2 will automatically start up the application.</li>
+<li>Add botsengine_path = /usr/local/bin/bots-engine.py in the Bots ini file</li>
 </ul>
               
             </div>
@@ -1305,10 +1302,10 @@ them. So you can run it over and over again.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../StartMyFirstPluginResults/" class="btn btn-neutral float-right" title="View results">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../DeploymentOtherDatabase/" class="btn btn-neutral float-right" title="Use MySQL/PostgreSQL">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../StartGetBotsRunning/" class="btn btn-neutral" title="Get bots running"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DeploymentHttps/" class="btn btn-neutral" title="Bots-monitor over HTTPS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1335,10 +1332,10 @@ them. So you can run it over and over again.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../StartGetBotsRunning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../DeploymentHttps/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../StartMyFirstPluginResults/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../DeploymentOtherDatabase/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
