@@ -18,7 +18,7 @@ To handle these problems bots has some features called
 
 Configuration change management in bots has 2 aspects:
 
-1.  Use [tools](UsefulTools#Compare_and_merge.md) for:
+1.  Use [tools](UsefulTools.md#Compare_and_merge) for:
     -   Comparing differences in configuration of environments
     -   Pushing the changes from test-\>production environment in a
         controlled, automated way

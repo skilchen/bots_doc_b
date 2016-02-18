@@ -5,7 +5,7 @@
     - 	Mind: bots 2.2.0 does not support Django 1.4.`*`.
     -	Django version 1.3.1 is tested and recommended.
 -	[Install](https://docs.djangoproject.com/en/1.3/topics/install/#install-the-django-code) the new version
--	[Restart](StartGetBotsRunning#Start_bots-monitor_(including_bots-webserver).md) the bots webserver
+-	[Restart](StartGetBotsRunning.md#Start_bots-monitor_(including_bots-webserver)) the bots webserver
 
 Be sure to use the correct bots upgrade plugin to match the version of Django you have installed.
 

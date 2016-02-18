@@ -1,14 +1,14 @@
 ## Recipe to push test-\>production (bots\>=3.0)
 
 Recipe to use a standard [directory comparison
-tool](UsefulTools.md#Compare\_and\_merge.md) to manage the differences in
+tool](UsefulTools.md#Compare\_and\_merge) to manage the differences in
 configuration between test and production: 
 
 1. 	For both environments,
 	make configuration index file (menu-\>Systasks-\>Make configuration
 	index) 
 1. 	Compare both environments using a [directory comparison
-	tool](UsefulTools#Compare\_and\_merge.md). What you should compare
+	tool](UsefulTools#Compare\_and\_merge). What you should compare
 	is: 
     -	All files in _bots/usersys_. 
     -	Note that the file

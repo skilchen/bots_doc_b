@@ -14,7 +14,7 @@ Best way to use this is to have each route-part do one thing; either:
 -   fetch incoming files; you can fetch files from multiple sources
 -   translate (typically once per route)
 -   send outgoing files to different destinations/partners using
-    [filtering](RoutesComposite#Filtering.md) It is advised to set up
+    [filtering](RoutesComposite.md#Filtering) It is advised to set up
     composite routes this way (using at least 3 route-parts).
 
 ### Use cases

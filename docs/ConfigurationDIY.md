@@ -30,8 +30,13 @@ This is how I start with a new route and translation...
 -	When testing a mapping, it's very useful to insert print statements to help with [debugging](Debug.md). 
 	The output will be seen in the webserver console window if you run bots engine from the GUI menu.
 
-Once you can run the route with no errors and get "something" output you'll feel that sense of achievement and can then go on to add everything else you need into the mapping and grammar, piece by piece. If you have many mappings to do, create a module of common functions you create, and import into every mapping. Also check out the bots built in [mapping functions](MappingFunction.md) provided. The [code conversion tables](MappingFunction#Codeconversion.md) are particularly useful.
+Once you can run the route with no errors and get "something" output you'll feel that sense of achievement and can then go on 
+to add everything else you need into the mapping and grammar, piece by piece. If you have many mappings to do, create a module 
+of common functions you create, and import into every mapping. 
+Also check out the bots built in [mapping functions](MappingFunction.md) provided. 
+The [code conversion tables](MappingFunction.md#Codeconversion) are particularly useful.
 
-The channels are the final part once it's all working and tested, to read and write from the actual systems involved. Create the new channels and change the route to use them.
+The channels are the final part once it's all working and tested, to read and write from the actual systems involved. 
+Create the new channels and change the route to use them.
 
 I would say the learning curve is a little steep at first, but once started you'll be glad you did.

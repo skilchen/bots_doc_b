@@ -25,17 +25,17 @@ How the input values for the look-up are determined:
 3.  frompartner can be:
     -   configured in the route
     -   determined by the grammar using
-        [QUERIES](GrammarsStructure#QUERIES.md)
+        [QUERIES](GrammarsStructure.md#QUERIES)
 
 4.  topartner can be:
     -   configured in the route
     -   determined by the grammar using
-        [QUERIES](GrammarsStructure#QUERIES.md)
+        [QUERIES](GrammarsStructure.md#QUERIES)
 
 5.  alt can be:
     -   configured in the route
     -   determined by the grammar using
-        [QUERIES](GrammarsStructure#QUERIES.md)
+        [QUERIES](GrammarsStructure.md#QUERIES)
     -   set by mapping script in a [chained
         translation](TranslationAlt.md)
 
