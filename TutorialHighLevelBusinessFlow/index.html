@@ -8,7 +8,7 @@
   
   
   
-  <title>Introduction - Bots EDI Translator Documentation</title>
+  <title>High Level Business Flow - Bots EDI Translator Documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction";
-    var mkdocs_page_input_path = "ConfigurationSplitMerge.md";
-    var mkdocs_page_url = "/ConfigurationSplitMerge/";
+    var mkdocs_page_name = "High Level Business Flow";
+    var mkdocs_page_input_path = "TutorialHighLevelBusinessFlow.md";
+    var mkdocs_page_url = "/TutorialHighLevelBusinessFlow/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -619,15 +619,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Introduction</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#splitting-merging-and-enveloping-edi-files">Splitting, merging and enveloping edi files</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../ConfigurationSplitMerge/">Introduction</a>
         
     </li>
 
@@ -1158,8 +1151,17 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../TutorialHighLevelBusinessFlow/">High Level Business Flow</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">High Level Business Flow</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#high-level-edi-business-flow">High Level EDI Business Flow</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-business-flow">Example Business Flow</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -1224,11 +1226,11 @@
     
       
         
-          <li>Split/merge/envelope &raquo;</li>
+          <li>Tutorials &raquo;</li>
         
       
     
-    <li>Introduction</li>
+    <li>High Level Business Flow</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -1238,12 +1240,26 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="splitting-merging-and-enveloping-edi-files">Splitting, merging and enveloping edi files</h2>
-<p>The advised way of working with bots is to have a translation work 
-with a message (x12: transaction).  </p>
-<p>In edi an incoming file will often have multiple messages.</p>
-<p>And often you will have to have multiple outgoing messages in one
-edi-file (merging, enveloping).</p>
+                <h2 id="high-level-edi-business-flow">High Level EDI Business Flow</h2>
+<p>Various documents need to be exchanged during the lifecycle of a business transaction.  A generic flow is shown below, this focuses on the business processes, not a particular EDI implementation (we'll get to that later).</p>
+<p>There may be other communication, for example business process/contracts may dictate that all changes are requested and approved by email prior to the ERP systems being modified.</p>
+<h3 id="example-business-flow">Example Business Flow</h3>
+<ul>
+<li>Buyer (customer) creates a purchase order (PO)</li>
+<li>PO is sent to supplier via EDI</li>
+<li>Supplier loads a Sale Order in response to the PO, with optional changes.</li>
+<li>Supplier acknowledges PO (with any changes)</li>
+<li>Buyer changes quantity of a line (part)</li>
+<li>Buyer-initiated Change Request is sent to supplier via EDI</li>
+<li>Supplier implements or rejects changes</li>
+<li>Supplier sends summary of changes/rejects to buyer via EDI</li>
+<li>Supplier needs to delete a line as they can no longer supply</li>
+<li>Supplier sends supplier-initiated change request to buyer/customer via EDI</li>
+<li>Buyer receives change request and implement or rejects changes</li>
+<li>Supplier ships material</li>
+<li>Supplier sends an <a href="../TutorialAdvanceShipNotice/">Advance Ship Notice</a> (shipping manifest) via EDI</li>
+<li>Supplier sends invoice via EDI</li>
+</ul>
               
             </div>
           </div>
@@ -1251,10 +1267,10 @@ edi-file (merging, enveloping).</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ConfigurationSplit/" class="btn btn-neutral float-right" title="Split edi files">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../TutorialAdvanceShipNotice/" class="btn btn-neutral float-right" title="Advance Shipment Notice">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Confirmations/" class="btn btn-neutral" title="Confirmations/acknowledgements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TutorialEdiBasics/" class="btn btn-neutral" title="EDI Basics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1281,10 +1297,10 @@ edi-file (merging, enveloping).</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Confirmations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../TutorialEdiBasics/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../ConfigurationSplit/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../TutorialAdvanceShipNotice/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

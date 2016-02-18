@@ -2681,6 +2681,41 @@
             "title": "Details"
         }, 
         {
+            "location": "/TutorialHighLevelBusinessFlow/", 
+            "text": "High Level EDI Business Flow\n\n\nVarious documents need to be exchanged during the lifecycle of a business transaction.  A generic flow is shown below, this focuses on the business processes, not a particular EDI implementation (we'll get to that later).\n\n\nThere may be other communication, for example business process/contracts may dictate that all changes are requested and approved by email prior to the ERP systems being modified.\n\n\nExample Business Flow\n\n\n\n\nBuyer (customer) creates a purchase order (PO)\n\n\nPO is sent to supplier via EDI\n\n\nSupplier loads a Sale Order in response to the PO, with optional changes.\n\n\nSupplier acknowledges PO (with any changes)\n\n\nBuyer changes quantity of a line (part)\n\n\nBuyer-initiated Change Request is sent to supplier via EDI\n\n\nSupplier implements or rejects changes\n\n\nSupplier sends summary of changes/rejects to buyer via EDI\n\n\nSupplier needs to delete a line as they can no longer supply\n\n\nSupplier sends supplier-initiated change request to buyer/customer via EDI\n\n\nBuyer receives change request and implement or rejects changes\n\n\nSupplier ships material\n\n\nSupplier sends an \nAdvance Ship Notice\n (shipping manifest) via EDI\n\n\nSupplier sends invoice via EDI", 
+            "title": "High Level Business Flow"
+        }, 
+        {
+            "location": "/TutorialHighLevelBusinessFlow/#high-level-edi-business-flow", 
+            "text": "Various documents need to be exchanged during the lifecycle of a business transaction.  A generic flow is shown below, this focuses on the business processes, not a particular EDI implementation (we'll get to that later).  There may be other communication, for example business process/contracts may dictate that all changes are requested and approved by email prior to the ERP systems being modified.", 
+            "title": "High Level EDI Business Flow"
+        }, 
+        {
+            "location": "/TutorialHighLevelBusinessFlow/#example-business-flow", 
+            "text": "Buyer (customer) creates a purchase order (PO)  PO is sent to supplier via EDI  Supplier loads a Sale Order in response to the PO, with optional changes.  Supplier acknowledges PO (with any changes)  Buyer changes quantity of a line (part)  Buyer-initiated Change Request is sent to supplier via EDI  Supplier implements or rejects changes  Supplier sends summary of changes/rejects to buyer via EDI  Supplier needs to delete a line as they can no longer supply  Supplier sends supplier-initiated change request to buyer/customer via EDI  Buyer receives change request and implement or rejects changes  Supplier ships material  Supplier sends an  Advance Ship Notice  (shipping manifest) via EDI  Supplier sends invoice via EDI", 
+            "title": "Example Business Flow"
+        }, 
+        {
+            "location": "/TutorialAdvanceShipNotice/", 
+            "text": "Introduction\n\n\nThe Advance Ship Notice, or ASN, electronically communicates the contents of a shipment to a trading partner. It is sent in advance of the shipment arriving at the partner\u2019s facility, this gives the receiver time to arrange storage space or onward logistics.\n\n\nTypical ASN Contents\n\n\nAn ASN sent to a customer typically contains:\n-   Customer Purchase Order (PO) Number\n-   Carrier information, such as name and tracking/Airway Bill number\n-   Estimated Time of Arrival\n-   Line level information such as part codes and quantities\n-   Item or pack level information such as serial numbers\n\n\nASN Document Numbers\n\n\n\n\nASC X12: 856\n\n\nUN/EDIFACT: DESADV\n\n\nTRADACOMS: Delivery Notification File", 
+            "title": "Advance Shipment Notice"
+        }, 
+        {
+            "location": "/TutorialAdvanceShipNotice/#introduction", 
+            "text": "The Advance Ship Notice, or ASN, electronically communicates the contents of a shipment to a trading partner. It is sent in advance of the shipment arriving at the partner\u2019s facility, this gives the receiver time to arrange storage space or onward logistics.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/TutorialAdvanceShipNotice/#typical-asn-contents", 
+            "text": "An ASN sent to a customer typically contains:\n-   Customer Purchase Order (PO) Number\n-   Carrier information, such as name and tracking/Airway Bill number\n-   Estimated Time of Arrival\n-   Line level information such as part codes and quantities\n-   Item or pack level information such as serial numbers", 
+            "title": "Typical ASN Contents"
+        }, 
+        {
+            "location": "/TutorialAdvanceShipNotice/#asn-document-numbers", 
+            "text": "ASC X12: 856  UN/EDIFACT: DESADV  TRADACOMS: Delivery Notification File", 
+            "title": "ASN Document Numbers"
+        }, 
+        {
             "location": "/OdooIntegration/", 
             "text": "Odoo Integration\n\n\nBots can add EDI support to Odoo (previously OpenERP).\n\n\nNote\n The standard Odoo EDI module only transfers data between\ntwo Odoo installations and is \nNOT\n X12, EDIFACT or similar EDI.\n\n\nDetails\n\n\nTo do:\n\n\n\n\nTutorialHighLevelBusinessFlow\n\n\nThe Odoo XMLRPC interface\n\n\nThe bots_connector module\n\n\nExample script - Sending an X12 810 invoice\n\n\nExample script - Creating a sale order from X12 850 purchase order", 
             "title": "Integration with Odoo/OpenERP"
