@@ -1,6 +1,6 @@
 ## Odoo Integration 
 
-Bots can add EDI support to Odoo (previously OpenERP).
+Bots can add EDI support to [Odoo (previously OpenERP)](https://github.com/odoo/odoo).
 
 **Note** The standard Odoo EDI module only transfers data between
 two Odoo installations and is **NOT** X12, EDIFACT or similar EDI.
