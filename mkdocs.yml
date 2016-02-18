@@ -160,6 +160,8 @@ pages:
     -   Tutorials: 
         - Introduction: TutorialHome.md
         - EDI Basics: TutorialEdiBasics.md
+        - High Level Business Flow: TutorialHighLevelBusinessFlow.md
+        - Advance Shipment Notice: TutorialAdvanceShipNotice.md
     -   'Integration with Odoo/OpenERP': OdooIntegration.md
     -   'New to python?': NewToPython.md
     -   'External reference links': Links.md
