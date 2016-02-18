@@ -6,5 +6,5 @@ A high level introduction to EDI - business process focused
 
 *Business Process*
 
-  [High Level Business Flow](TutorialHighLevelBusinessFlow.md)
+[High Level Business Flow](TutorialHighLevelBusinessFlow.md)
 

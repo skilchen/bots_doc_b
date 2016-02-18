@@ -9,7 +9,7 @@ two Odoo installations and is **NOT** X12, EDIFACT or similar EDI.
 
 To do:
 
-- 	TutorialHighLevelBusinessFlow
+- 	[TutorialHighLevelBusinessFlow](TutorialHighLevelBusinessFlow.md)
 -	The Odoo XMLRPC interface
 -	The bots\_connector module
 -	Example script - Sending an X12 810 invoice
