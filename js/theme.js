@@ -22,6 +22,7 @@ $( document ).ready(function() {
     hljs.initHighlightingOnLoad();
 
     $('table').addClass('docutils');
+
 });
 
 window.SphinxRtdTheme = (function (jquery) {
