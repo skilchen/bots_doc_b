@@ -1,6 +1,10 @@
 site_name: Bots EDI Translator Documentation
 docs_dir: docs
 theme: readthedocs
+#extra_css:
+#    - css/extra.css
+extra_javascript: 
+    - js/extra.js
 pages:
     - Home: 'index.md'
     - Get started with bots: 
